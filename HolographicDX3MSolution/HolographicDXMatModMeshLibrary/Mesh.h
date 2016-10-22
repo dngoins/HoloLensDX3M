@@ -2,6 +2,7 @@
 #include "pch.h"
 #include <assimp\material.h>
 #include <assimp\mesh.h>
+#include <WindowsNumerics.h>
 #include "BufferContainer.h"
 
 
@@ -9,6 +10,7 @@ struct aiMesh;
 
 using namespace Platform;
 using namespace Platform::Collections;
+using namespace Windows::Foundation::Numerics;
 
 namespace HolographicDXMatModMeshLibrary
 {
@@ -34,19 +36,19 @@ namespace HolographicDXMatModMeshLibrary
 		ModelMaterial ^ GetMaterial();
 		property Platform::String ^ Name;
 
-		property Vector<XMFLOAT3> ^ Vertices;
-		property Vector<XMFLOAT3> ^ Normals;
-		property Vector<XMFLOAT3> ^ Tangents;
-		property Vector<XMFLOAT3> ^ BiNormals;
-		property Vector<Vector<XMFLOAT3> ^> ^ TextureCoordinates;
-		property Vector<Vector<XMFLOAT3> ^> ^ VertexColors;
+		property Vector<float3> ^ Vertices;
+		property Vector<float3> ^ Normals;
+		property Vector<float3> ^ Tangents;
+		property Vector<float3> ^ BiNormals;
+		property Vector<Vector<float3> ^> ^ TextureCoordinates;
+		property Vector<Vector<float3> ^> ^ VertexColors;
 		property Vector<UINT> ^ Indices;
 		property UINT FaceCount;
 		
 		bool HasCachedVertexBuffer() ;
 		bool HasCachedIndexBuffer() ;
 
-		void CreateIndexBuffer(ID3D11Buffer** indexBuffer);
+		void CreateIndexBuffer(IInspectable ^ indexBuffer); // ID3D11Buffer** indexBuffer);
 		void CreateCachedVertexAndIndexBuffers(ID3D11Device& device);
 
 
