@@ -36,19 +36,35 @@ namespace HolographicDXMatModMeshLibrary
 		ModelMaterial ^ GetMaterial();
 		property Platform::String ^ Name;
 
-		property Vector<float3> ^ Vertices;
-		property Vector<float3> ^ Normals;
-		property Vector<float3> ^ Tangents;
-		property Vector<float3> ^ BiNormals;
-		property Vector<Vector<float3> ^> ^ TextureCoordinates;
-		property Vector<Vector<float3> ^> ^ VertexColors;
-		property Vector<UINT> ^ Indices;
-		property UINT FaceCount;
+		property Vector<float3> ^ Vertices {  Vector<float3 > ^ get() { return ref new Vector<float3>(); }}
+		property Vector<float3> ^ Normals
+		{  Vector<float3 > ^ get() { return ref new Vector<float3>(); }}
+
+		property Vector<float3> ^ Tangents
+		{  Vector<float3 > ^ get() { return ref new Vector<float3>(); }}
+
+		property Vector<float3> ^ BiNormals
+		{  Vector<float3 > ^ get() { return ref new Vector<float3>(); }}
+
+		property Vector<Vector<float3> ^> ^ TextureCoordinates
+		{  Vector<Vector<float3> ^> ^ get() { return ref new Vector<Vector<float3> ^>(); }}
+
+		property Vector<Vector<float3> ^> ^ VertexColors
+		{ Vector<Vector<float3> ^> ^ get() { return ref new Vector<Vector<float3>^>(); }}
+
+		property Vector<UINT> ^ Indices
+		{  Vector<UINT > ^ get() { return ref new Vector<UINT>(); }}
+
+		property UINT FaceCount
+		{
+			UINT get() { return 0;  }
+		}
 		
 		bool HasCachedVertexBuffer() ;
 		bool HasCachedIndexBuffer() ;
 
-		void CreateIndexBuffer(IInspectable ^ indexBuffer); // ID3D11Buffer** indexBuffer);
+	internal:
+		void CreateIndexBuffer(ID3D11Buffer** indexBuffer);
 		void CreateCachedVertexAndIndexBuffers(ID3D11Device& device);
 
 
@@ -72,6 +88,16 @@ namespace HolographicDXMatModMeshLibrary
 
 		BufferContainer* mVertexBuffer;
 		BufferContainer* mIndexBuffer;
+
+	internal:
+		bool HasMeshes() const;
+		bool HasMaterials() const;
+		bool HasAnimations() const;
+
+		const std::vector<Mesh*>& Meshes() const;
+		const std::vector<ModelMaterial*>& Materials() const;	
+		std::vector<Mesh*> mMeshes;
+		std::vector<ModelMaterial*> mMaterials;
 	};
 
 }

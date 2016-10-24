@@ -19,7 +19,7 @@ namespace HolographicDXMatModMeshLibrary
 		mFaceCount(0), mIndices(), mVertexBuffer(), mIndexBuffer()
 	{		
 		//mMaterial = mModel->Cu
-		mMaterial = mModel->Materials().at(mesh.mMaterialIndex);
+		mMaterial = mModel->Materials->GetAt(mesh.mMaterialIndex);
 
 		// Vertices
 		mVertices.reserve(mesh.mNumVertices);
@@ -126,14 +126,14 @@ namespace HolographicDXMatModMeshLibrary
 	{
 		Mesh^ mesh = const_cast<Mesh^>(this);
 
-		return mesh->mVertexBuffer->HasBuffer();
+		return false; // mesh->mVertexBuffer->HasBuffer();
 	}
 
 	bool Mesh::HasCachedIndexBuffer() 
 	{
 		Mesh^ mesh = const_cast<Mesh^>(this);
 
-		return mesh->mIndexBuffer->HasBuffer();
+		return false; // mesh->mIndexBuffer->HasBuffer();
 	}
 
 	void Mesh::CreateIndexBuffer(ID3D11Buffer** indexBuffer)

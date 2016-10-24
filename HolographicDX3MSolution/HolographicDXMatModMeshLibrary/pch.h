@@ -42,3 +42,11 @@ namespace Library
 
 using namespace DirectX;
 using namespace DirectX::PackedVector;
+using namespace Windows::Foundation::Collections;
+using namespace Platform::Collections;
+
+using namespace D2D1;
+using namespace Microsoft::WRL;
+using namespace Windows::Graphics::DirectX::Direct3D11;
+using namespace Windows::Graphics::Display;
+using namespace Windows::Graphics::Holographic;

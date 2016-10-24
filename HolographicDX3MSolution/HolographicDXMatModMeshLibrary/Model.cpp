@@ -11,11 +11,6 @@
 #include <assimp/postprocess.h>
 #include <windows.graphics.directx.direct3d11.interop.h>
 
-using namespace D2D1;
-using namespace Microsoft::WRL;
-using namespace Windows::Graphics::DirectX::Direct3D11;
-using namespace Windows::Graphics::Display;
-using namespace Windows::Graphics::Holographic;
 
 
 using namespace Platform;
@@ -24,6 +19,9 @@ namespace HolographicDXMatModMeshLibrary
 {
 	Model::Model(HolographicSpace ^ holographicSpace, Platform::String ^ filename, bool flipUVs = false) : mHolographicSpace(holographicSpace)
 	{
+		mMeshes = ref new Vector<Mesh^>();
+		mMaterials = ref new Vector<ModelMaterial^>();
+
 		mDeviceResources = std::make_shared<DX::DeviceResources>();
 		mDeviceResources->SetHolographicSpace(mHolographicSpace);
 
@@ -51,7 +49,7 @@ namespace HolographicDXMatModMeshLibrary
 		{
 			for (UINT i = 0; i < scene->mNumMaterials; i++)
 			{
-				mMaterials.push_back(ref new ModelMaterial(this, scene->mMaterials[i]));
+				mMaterials->Append(ref new ModelMaterial(this, scene->mMaterials[i]));
 			}
 		}
 
@@ -60,9 +58,9 @@ namespace HolographicDXMatModMeshLibrary
 			for (UINT i = 0; i < scene->mNumMeshes; i++)
 			{
 				aiMesh  _aimesh = *(scene->mMeshes[i]);
-
+				
 				Mesh^ mesh = ref new Mesh(this, _aimesh);
-				mMeshes.push_back(mesh);
+				mMeshes->Append(mesh);
 			}
 		}
 	}
@@ -88,23 +86,6 @@ namespace HolographicDXMatModMeshLibrary
 	//}
 
 
-	bool Model::HasMeshes() 
-	{
-		return (mMeshes.size() > 0);
-	}
 
-	bool Model::HasMaterials() 
-	{
-		return (mMaterials.size() > 0);
-	}
 
-	const std::vector<Mesh^>& Model::Meshes() 
-	{
-		return mMeshes;
-	}
-
-	const std::vector<ModelMaterial^>& Model::Materials() 
-	{
-		return mMaterials;
-	}
 }

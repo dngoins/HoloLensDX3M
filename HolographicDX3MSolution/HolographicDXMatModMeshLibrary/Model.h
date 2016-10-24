@@ -11,6 +11,7 @@ using namespace Windows::Graphics::Display;
 using namespace Windows::Graphics::Holographic;
 
 
+
 namespace HolographicDXMatModMeshLibrary
 {
 
@@ -21,14 +22,31 @@ namespace HolographicDXMatModMeshLibrary
 
 	public:
 		Model(HolographicSpace^ holographicSpace, Platform::String ^ filename, bool flipUVs = false);
-//		~Model();
+		//		~Model();
 
-		bool HasMeshes() ;
-		bool HasMaterials() ;
-		bool HasAnimations() ;
+		property bool HasMeshes
+		{
+			bool get() { return ( mMeshes->Size > 0); }
+		}
 
-		const std::vector<Mesh^>& Meshes() ;
-		const std::vector<ModelMaterial^>& Materials() ;
+		property bool HasMaterials { bool get() { return (mMaterials->Size > 0); }
+		}
+
+		property bool HasAnimations;
+
+		property IVector<Mesh^> ^ Meshes
+		{
+			IVector<Mesh^> ^ get() { return mMeshes; }
+		}
+
+		property IVector<ModelMaterial ^> ^ Materials
+		{
+			IVector<ModelMaterial^> ^ get() { return mMaterials; }
+		}
+
+
+		//const std::vector<Mesh^>& Meshes() ;
+		//const std::vector<ModelMaterial^>& Materials() ;
 
 	internal:
 		std::shared_ptr<DX::DeviceResources> GetDeviceResources();
@@ -37,8 +55,9 @@ namespace HolographicDXMatModMeshLibrary
 		Model(const Model^ rhs);
 		Model^ operator=(const Model^ rhs);
 
-		std::vector<Mesh^> mMeshes;
-		std::vector<ModelMaterial^> mMaterials;
+		
+		Vector<Mesh^>^ mMeshes;
+		Vector<ModelMaterial^>^ mMaterials;
 		std::shared_ptr<DX::DeviceResources> mDeviceResources;
 		HolographicSpace ^ mHolographicSpace;
 
