@@ -15,14 +15,15 @@ using namespace Windows::Graphics::Holographic;
 namespace HolographicDXMatModMeshLibrary
 {
 
-	ref class Model sealed
+	public ref class Model sealed
 	{
 		friend ref class Mesh;
 		friend ref class ModelMaterial;
 
-	public:
-		Model(HolographicSpace^ holographicSpace, Platform::String ^ filename, bool flipUVs = false);
-		//		~Model();
+	public:		
+		Model(HolographicSpace ^ holographicSpace, Vector<byte>^ fileData, size_t pLength, bool flipUVs);
+
+		virtual ~Model();
 
 		property bool HasMeshes
 		{
@@ -44,16 +45,12 @@ namespace HolographicDXMatModMeshLibrary
 			IVector<ModelMaterial^> ^ get() { return mMaterials; }
 		}
 
-
-		//const std::vector<Mesh^>& Meshes() ;
-		//const std::vector<ModelMaterial^>& Materials() ;
-
 	internal:
 		std::shared_ptr<DX::DeviceResources> GetDeviceResources();
 
 	private:
 		Model(const Model^ rhs);
-		Model^ operator=(const Model^ rhs);
+		//Model^ operator=(const Model^ rhs);
 
 		
 		Vector<Mesh^>^ mMeshes;

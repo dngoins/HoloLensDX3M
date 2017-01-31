@@ -1,7 +1,7 @@
 #pragma once
 
 #include "pch.h"
-#include <assimp\material.h>
+#include <material.h>
 
 struct aiMaterial;
 
@@ -21,14 +21,13 @@ namespace HolographicDXMatModMeshLibrary
 		TextureTypeEnd
 	};
 
-	ref class ModelMaterial sealed
+	public ref class ModelMaterial sealed
 	{
 		friend ref class Model;
 
 	public:
 		ModelMaterial(Model^ model);
-//		~ModelMaterial();
-
+		virtual ~ModelMaterial();
 		Model^ GetModel();
 		
 	

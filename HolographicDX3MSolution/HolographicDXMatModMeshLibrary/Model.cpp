@@ -6,18 +6,22 @@
 
 #include "MatrixHelper.h"
 
-#include <assimp/Importer.hpp>
-#include <assimp/scene.h>
-#include <assimp/postprocess.h>
+#include <Importer.hpp>
+#include <scene.h>
+#include <postprocess.h>
 #include <windows.graphics.directx.direct3d11.interop.h>
-
+#include <collection.h>
+#include <algorithm>
 
 
 using namespace Platform;
+using namespace Platform::Collections;
+using namespace Windows::Foundation::Collections;
 
 namespace HolographicDXMatModMeshLibrary
-{
-	Model::Model(HolographicSpace ^ holographicSpace, Platform::String ^ filename, bool flipUVs = false) : mHolographicSpace(holographicSpace)
+{	
+	Model::Model(HolographicSpace ^ holographicSpace, Vector<byte>^ fileData,  size_t pLength, bool flipUVs)
+		: mHolographicSpace(holographicSpace)
 	{
 		mMeshes = ref new Vector<Mesh^>();
 		mMaterials = ref new Vector<ModelMaterial^>();
@@ -32,58 +36,62 @@ namespace HolographicDXMatModMeshLibrary
 		{
 			flags |= aiProcess_FlipUVs;
 		}
+		
+		std::vector<byte> bFileData = std::vector<byte>();
+		bFileData.reserve(fileData->Size);
 
-
-		std::wstring wfilename(filename->Begin());
-		std::string s_filename(wfilename.begin(), wfilename.end());
-
-
-		const aiScene* scene = importer.ReadFile(s_filename, flags);
-		if (scene == nullptr)
+		std::for_each(begin(fileData), end(fileData), [&](byte val)
 		{
-			OutputDebugStringA(importer.GetErrorString());
-			OutputDebugString(L"\n");
-		}
+			bFileData.push_back(val);
+		});
 
-		if (scene->HasMaterials())
-		{
-			for (UINT i = 0; i < scene->mNumMaterials; i++)
+			const void* pBuffer = LPVOID(&bFileData[0]);
+			const aiScene* scene = importer.ReadFileFromMemory(pBuffer, pLength, 0);
+			if (scene == nullptr)
 			{
-				mMaterials->Append(ref new ModelMaterial(this, scene->mMaterials[i]));
+				OutputDebugStringA(importer.GetErrorString());
+				OutputDebugString(L"\n");
 			}
-		}
 
-		if (scene->HasMeshes())
-		{
-			for (UINT i = 0; i < scene->mNumMeshes; i++)
+			if (scene->HasMaterials())
 			{
-				aiMesh  _aimesh = *(scene->mMeshes[i]);
-				
-				Mesh^ mesh = ref new Mesh(this, _aimesh);
-				mMeshes->Append(mesh);
+				for (UINT i = 0; i < scene->mNumMaterials; i++)
+				{
+					mMaterials->Append(ref new ModelMaterial(this, scene->mMaterials[i]));
+				}
 			}
-		}
+
+			if (scene->HasMeshes())
+			{
+				for (UINT i = 0; i < scene->mNumMeshes; i++)
+				{
+					aiMesh  _aimesh = *(scene->mMeshes[i]);
+
+					Mesh^ mesh = ref new Mesh(this, _aimesh);
+					mMeshes->Append(mesh);
+				}
+			}
+	
+
+		
 	}
+
 
 	std::shared_ptr<DX::DeviceResources> Model::GetDeviceResources()
 	{
 		return mDeviceResources;
 	}
 
-	//Model::~Model()
-	//{
-	//	for (Mesh^ mesh : mMeshes)
-	//	{
-	//		//delete mesh;
-	//		mesh = nullptr;
-	//	}
+	Model::~Model()
+	{
+		mMeshes->Clear();
+		mMeshes->Dispose();
+		mMeshes = nullptr;
 
-	//	for (ModelMaterial^ material : mMaterials)
-	//	{
-	//		//delete material;
-	//		material = nullptr;
-	//	}
-	//}
+		mMaterials->Clear();
+		mMaterials->Dispose();
+		mMaterials = nullptr;		
+	}
 
 
 

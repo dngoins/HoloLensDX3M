@@ -1,7 +1,7 @@
 #pragma once
 #include "pch.h"
-#include <assimp\material.h>
-#include <assimp\mesh.h>
+#include <material.h>
+#include <mesh.h>
 #include <WindowsNumerics.h>
 #include "BufferContainer.h"
 
@@ -16,12 +16,12 @@ namespace HolographicDXMatModMeshLibrary
 {
 	ref class ModelMaterial;
 
-	ref class Mesh sealed
+	public ref class Mesh sealed
 	{
 		friend ref class Model;
 
 	public:
-//		~Mesh();
+		virtual ~Mesh();
 
 		property Model ^ CurrentModel
 		{
@@ -33,33 +33,76 @@ namespace HolographicDXMatModMeshLibrary
 			ModelMaterial ^ get() { return mMaterial;  }
 		}
 
-		ModelMaterial ^ GetMaterial();
-		property Platform::String ^ Name;
+		property String ^ Name
+		{
+			String ^ get()
+			{
+				auto data = std::wstring(mname.begin(), mname.end());
+				m_Name = ref new Platform::String(data.data());
+				return m_Name;
+			}
+			void set(String ^ _name)
+			{
+				m_Name = _name;
+				mname = std::string(m_Name->Begin(), m_Name->End());
+			}
+		}
 
-		property Vector<float3> ^ Vertices {  Vector<float3 > ^ get() { return ref new Vector<float3>(); }}
-		property Vector<float3> ^ Normals
-		{  Vector<float3 > ^ get() { return ref new Vector<float3>(); }}
+		
 
-		property Vector<float3> ^ Tangents
-		{  Vector<float3 > ^ get() { return ref new Vector<float3>(); }}
+		property IVector<float3> ^ Vertices {   IVector<float3> ^ get()
+		{
+			return ref new Vector<float3>(mVertices.begin(), mVertices.end());
+		}}
 
-		property Vector<float3> ^ BiNormals
-		{  Vector<float3 > ^ get() { return ref new Vector<float3>(); }}
+		property  IVector<float3> ^ Normals
+		{   IVector<float3> ^ get() { return ref new Vector<float3>(mNormals.begin(), mNormals.end()); }}
 
-		property Vector<Vector<float3> ^> ^ TextureCoordinates
-		{  Vector<Vector<float3> ^> ^ get() { return ref new Vector<Vector<float3> ^>(); }}
+		property  IVector<float3> ^ Tangents
+		{   IVector<float3> ^ get() { return ref new Vector<float3>(mTangents.begin(), mTangents.end()); }}
 
-		property Vector<Vector<float3> ^> ^ VertexColors
-		{ Vector<Vector<float3> ^> ^ get() { return ref new Vector<Vector<float3>^>(); }}
+		property  IVector<float3> ^ BiNormals
+		{   IVector<float3> ^ get() { return ref new Vector<float3>(mBiNormals.begin(), mBiNormals.end()); }}
 
-		property Vector<UINT> ^ Indices
-		{  Vector<UINT > ^ get() { return ref new Vector<UINT>(); }}
+		property  IVector<Vector<float3> ^> ^ TextureCoordinates
+		{
+			IVector<Vector<float3>^> ^ get(){ return mTextureCoordinates ;}
+		}
+
+		property IVector<Vector<float4> ^> ^ VertexColors
+		{ 
+			IVector<Vector<float4> ^> ^ get() { return mVertexColors; }
+		}
+
+		property IVector<UINT> ^ Indices
+		{  IVector<UINT > ^ get() { return ref new Vector<UINT>(mIndices.begin(), mIndices.end()); }}
+
 
 		property UINT FaceCount
 		{
-			UINT get() { return 0;  }
+			UINT get() { mFaceCount.Value;  }
 		}
-		
+		property bool HasMeshes
+		{
+			bool get() { return (mMeshes->Size > 0); }
+		}
+
+		property bool HasMaterials { bool get() { return (mMaterials->Size > 0); }
+		}
+
+		property bool HasAnimations;
+
+		property IVector<Mesh^> ^ Meshes
+		{
+			IVector<Mesh^> ^ get() { return mMeshes; }
+		}
+
+		property IVector<ModelMaterial ^> ^ Materials
+		{
+			IVector<ModelMaterial^> ^ get() { return mMaterials; }
+		}
+
+
 		bool HasCachedVertexBuffer() ;
 		bool HasCachedIndexBuffer() ;
 
@@ -76,13 +119,14 @@ namespace HolographicDXMatModMeshLibrary
 
 		Model ^ mModel;
 		ModelMaterial^ mMaterial;
-		std::string mName;
+		String ^ m_Name;
+		std::string mname;
 		std::vector<XMFLOAT3> mVertices;
 		std::vector<XMFLOAT3> mNormals;
 		std::vector<XMFLOAT3> mTangents;
 		std::vector<XMFLOAT3> mBiNormals;
-		std::vector<std::vector<XMFLOAT3>*> mTextureCoordinates;
-		std::vector<std::vector<XMFLOAT4>*> mVertexColors;
+		Vector<Vector<float3>^> ^ mTextureCoordinates;
+		Vector<Vector<float4>^> ^ mVertexColors;
 		UINT mFaceCount;
 		std::vector<UINT> mIndices;
 
@@ -90,14 +134,10 @@ namespace HolographicDXMatModMeshLibrary
 		BufferContainer* mIndexBuffer;
 
 	internal:
-		bool HasMeshes() const;
-		bool HasMaterials() const;
-		bool HasAnimations() const;
+	//	bool HasAnimations() const;
 
-		const std::vector<Mesh*>& Meshes() const;
-		const std::vector<ModelMaterial*>& Materials() const;	
-		std::vector<Mesh*> mMeshes;
-		std::vector<ModelMaterial*> mMaterials;
+		Vector<Mesh^>^ mMeshes;
+		Vector<ModelMaterial^>^ mMaterials;
 	};
 
 }

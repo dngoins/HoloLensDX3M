@@ -2,9 +2,9 @@
 #include "Mesh.h"
 
 #include "Model.h"
-#include <assimp\material.h>
+#include <material.h>
 
-#include <assimp/scene.h>
+#include <scene.h>
 
 using namespace HolographicDXMatModMeshLibrary;
 using namespace Platform;
@@ -15,7 +15,7 @@ namespace HolographicDXMatModMeshLibrary
 	
 
 	Mesh::Mesh ( Model^ model, aiMesh mesh)
-		:mModel(model),  mName(mesh.mName.C_Str()), mVertices(), mNormals(), mTangents(), mBiNormals(), mTextureCoordinates(), mVertexColors(),
+		:mModel(model),  mname(mesh.mName.C_Str()), mVertices(), mNormals(), mTangents(), mBiNormals(), mTextureCoordinates(), mVertexColors(),
 		mFaceCount(0), mIndices(), mVertexBuffer(), mIndexBuffer()
 	{		
 		//mMaterial = mModel->Cu
@@ -54,14 +54,16 @@ namespace HolographicDXMatModMeshLibrary
 		UINT uvChannelCount = mesh.GetNumUVChannels();
 		for (UINT i = 0; i < uvChannelCount; i++)
 		{
-			std::vector<XMFLOAT3>* textureCoordinates = new std::vector<XMFLOAT3>();
-			textureCoordinates->reserve(mesh.mNumVertices);
-			mTextureCoordinates.push_back(textureCoordinates);
+			//std::vector<XMFLOAT3>* textureCoordinates = new std::vector<XMFLOAT3>();
+			//textureCoordinates->reserve(mesh.mNumVertices);
+			Vector<float3> ^ textureCoordinates = ref new Vector<float3>(mesh.mNumVertices);			
+			mTextureCoordinates->Append(textureCoordinates);
 
 			aiVector3D* aiTextureCoordinates = mesh.mTextureCoords[i];
 			for (UINT j = 0; j < mesh.mNumVertices; j++)
 			{
-				textureCoordinates->push_back(XMFLOAT3(reinterpret_cast<const float*>(&aiTextureCoordinates[j])));
+				auto xmf = XMFLOAT3(reinterpret_cast<const float*>(&aiTextureCoordinates[j]));
+				textureCoordinates->Append(float3(xmf.x, xmf.y, xmf.z));
 			}
 		}
 
@@ -69,14 +71,14 @@ namespace HolographicDXMatModMeshLibrary
 		UINT colorChannelCount = mesh.GetNumColorChannels();
 		for (UINT i = 0; i < colorChannelCount; i++)
 		{
-			std::vector<XMFLOAT4>* vertexColors = new std::vector<XMFLOAT4>();
-			vertexColors->reserve(mesh.mNumVertices);
-			mVertexColors.push_back(vertexColors);
+			Vector<float4>^ vertexColors = ref new Vector<float4>(mesh.mNumVertices);			
+			mVertexColors->Append(vertexColors);
 
 			aiColor4D* aiVertexColors = mesh.mColors[i];
 			for (UINT j = 0; j < mesh.mNumVertices; j++)
 			{
-				vertexColors->push_back(XMFLOAT4(reinterpret_cast<const float*>(&aiVertexColors[j])));
+				auto xmf4 = XMFLOAT4(reinterpret_cast<const float*>(&aiVertexColors[j]));
+				vertexColors->Append(float4(xmf4.x, xmf4.y, xmf4.z, xmf4.w));
 			}
 		}
 
@@ -96,21 +98,19 @@ namespace HolographicDXMatModMeshLibrary
 		}
 	}
 
-	/*Mesh::~Mesh()
+	Mesh::~Mesh()
 	{
-		for (std::vector<XMFLOAT3>* textureCoordinates : mTextureCoordinates)
-		{
-			delete textureCoordinates;
-		}
+		mTextureCoordinates->Clear();
+		mTextureCoordinates->Dispose();
+		mTextureCoordinates = nullptr;
 
-		for (std::vector<XMFLOAT4>* vertexColors : mVertexColors)
-		{
-			delete vertexColors;
-		}
+		mVertexColors->Clear();
+		mVertexColors->Dispose();
+		mVertexColors = nullptr;
 
 		mVertexBuffer->ReleaseBuffer();
 		mIndexBuffer->ReleaseBuffer();
-	}*/
+	}
 	
 	BufferContainer* Mesh::VertexBuffer()
 	{

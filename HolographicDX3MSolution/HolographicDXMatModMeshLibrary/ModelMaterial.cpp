@@ -1,6 +1,6 @@
 #include "pch.h"
 #include "ModelMaterial.h"
-#include <assimp\scene.h>
+#include <scene.h>
 
 
 using namespace Platform;
@@ -63,13 +63,13 @@ namespace HolographicDXMatModMeshLibrary
 	}
 
 
-	/*ModelMaterial::~ModelMaterial()
+	ModelMaterial::~ModelMaterial()
 	{
 		for (std::pair<TextureType, std::vector<std::wstring>*> textures : mTextures)
 		{
 			DeleteObject(textures.second);
 		}
-	}*/
+	}
 
 	Model^ ModelMaterial::GetModel()
 	{
