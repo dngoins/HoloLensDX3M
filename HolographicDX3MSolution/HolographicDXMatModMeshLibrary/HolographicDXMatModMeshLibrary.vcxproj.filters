@@ -11,9 +11,7 @@
     <ClCompile Include="Mesh.cpp" />
     <ClCompile Include="Model.cpp" />
     <ClCompile Include="ModelMaterial.cpp" />
-    <ClCompile Include="BufferContainer.cpp" />
     <ClCompile Include="DeviceResources.cpp" />
-    <ClCompile Include="CameraResources.cpp" />
     <ClCompile Include="MatrixHelper.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -21,10 +19,8 @@
     <ClInclude Include="Mesh.h" />
     <ClInclude Include="Model.h" />
     <ClInclude Include="ModelMaterial.h" />
-    <ClInclude Include="BufferContainer.h" />
     <ClInclude Include="DeviceResources.h" />
     <ClInclude Include="DirectXHelper.h" />
-    <ClInclude Include="CameraResources.h" />
     <ClInclude Include="StepTimer.h" />
     <ClInclude Include="MatrixHelper.h" />
   </ItemGroup>

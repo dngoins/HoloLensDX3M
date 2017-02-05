@@ -1,18 +1,4 @@
-#include "pch.h"
 #include "Model.h"
-
-#include "Mesh.h"
-#include "ModelMaterial.h"
-
-#include "MatrixHelper.h"
-
-#include <Importer.hpp>
-#include <scene.h>
-#include <postprocess.h>
-#include <windows.graphics.directx.direct3d11.interop.h>
-#include <collection.h>
-#include <algorithm>
-
 
 using namespace Platform;
 using namespace Platform::Collections;
@@ -20,15 +6,9 @@ using namespace Windows::Foundation::Collections;
 
 namespace HolographicDXMatModMeshLibrary
 {	
-	Model::Model(HolographicSpace ^ holographicSpace, Vector<byte>^ fileData,  size_t pLength, bool flipUVs)
-		: mHolographicSpace(holographicSpace)
+	Model::Model( const Array<byte>^ fileData, bool flipUVs)		
 	{
-		mMeshes = ref new Vector<Mesh^>();
-		mMaterials = ref new Vector<ModelMaterial^>();
-
-		mDeviceResources = std::make_shared<DX::DeviceResources>();
-		mDeviceResources->SetHolographicSpace(mHolographicSpace);
-
+	
 		Assimp::Importer importer;
 
 		UINT flags = aiProcess_Triangulate | aiProcess_JoinIdenticalVertices | aiProcess_SortByPType | aiProcess_FlipWindingOrder;
@@ -38,7 +18,8 @@ namespace HolographicDXMatModMeshLibrary
 		}
 		
 		std::vector<byte> bFileData = std::vector<byte>();
-		bFileData.reserve(fileData->Size);
+		size_t pLength = fileData->Length;
+		bFileData.reserve(pLength );
 
 		std::for_each(begin(fileData), end(fileData), [&](byte val)
 		{
@@ -57,7 +38,7 @@ namespace HolographicDXMatModMeshLibrary
 			{
 				for (UINT i = 0; i < scene->mNumMaterials; i++)
 				{
-					mMaterials->Append(ref new ModelMaterial(this, scene->mMaterials[i]));
+					mMaterials.push_back(ref new ModelMaterial(this, scene->mMaterials[i]));
 				}
 			}
 
@@ -68,29 +49,23 @@ namespace HolographicDXMatModMeshLibrary
 					aiMesh  _aimesh = *(scene->mMeshes[i]);
 
 					Mesh^ mesh = ref new Mesh(this, _aimesh);
-					mMeshes->Append(mesh);
+					mMeshes.push_back(mesh);
 				}
 			}
 	
 
 		
 	}
-
-
-	std::shared_ptr<DX::DeviceResources> Model::GetDeviceResources()
-	{
-		return mDeviceResources;
-	}
-
+	
 	Model::~Model()
 	{
-		mMeshes->Clear();
-		mMeshes->Dispose();
-		mMeshes = nullptr;
+		mMeshes.clear();
+		//mMeshes->Dispose();
+		//mMeshes = nullptr;
 
-		mMaterials->Clear();
-		mMaterials->Dispose();
-		mMaterials = nullptr;		
+		mMaterials.clear();
+		//mMaterials->Dispose();
+		//mMaterials = nullptr;		
 	}
 
 

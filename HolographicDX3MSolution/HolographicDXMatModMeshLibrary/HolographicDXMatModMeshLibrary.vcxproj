@@ -215,8 +215,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="BufferContainer.h" />
-    <ClInclude Include="CameraResources.h" />
     <ClInclude Include="DeviceResources.h" />
     <ClInclude Include="DirectXHelper.h" />
     <ClInclude Include="MatrixHelper.h" />
@@ -227,8 +225,6 @@
     <ClInclude Include="StepTimer.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BufferContainer.cpp" />
-    <ClCompile Include="CameraResources.cpp" />
     <ClCompile Include="DeviceResources.cpp" />
     <ClCompile Include="MatrixHelper.cpp" />
     <ClCompile Include="Mesh.cpp" />

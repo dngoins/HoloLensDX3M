@@ -7,7 +7,7 @@ struct aiMaterial;
 
 namespace HolographicDXMatModMeshLibrary
 {
-	enum TextureType
+	public enum TextureType
 	{
 		TextureTypeDifffuse = 0,
 		TextureTypeSpecularMap,

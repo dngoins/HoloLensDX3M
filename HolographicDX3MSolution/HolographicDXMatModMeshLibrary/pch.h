@@ -3,6 +3,7 @@
 #include <collection.h>
 #include <ppltasks.h>
 
+#include <algorithm>
 #include <windows.h>
 #include <exception>
 #include <cassert>

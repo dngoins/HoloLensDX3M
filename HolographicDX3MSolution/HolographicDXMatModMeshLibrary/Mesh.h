@@ -3,7 +3,6 @@
 #include <material.h>
 #include <mesh.h>
 #include <WindowsNumerics.h>
-#include "BufferContainer.h"
 
 
 struct aiMesh;
@@ -38,44 +37,58 @@ namespace HolographicDXMatModMeshLibrary
 			String ^ get()
 			{
 				auto data = std::wstring(mname.begin(), mname.end());
-				m_Name = ref new Platform::String(data.data());
-				return m_Name;
+				return ref new Platform::String(data.data());				
 			}
 			void set(String ^ _name)
-			{
-				m_Name = _name;
-				mname = std::string(m_Name->Begin(), m_Name->End());
+			{				
+				mname = std::string(_name->Begin(), _name->End());
 			}
 		}
 
 		
 
-		property IVector<float3> ^ Vertices {   IVector<float3> ^ get()
+		property Array<float3> ^ Vertices {   Array<float3> ^ get()
 		{
-			return ref new Vector<float3>(mVertices.begin(), mVertices.end());
+			return ref new Array<float3>(mVertices.data, mVertices.size());
 		}}
 
-		property  IVector<float3> ^ Normals
-		{   IVector<float3> ^ get() { return ref new Vector<float3>(mNormals.begin(), mNormals.end()); }}
+		property  Array<float3> ^ Normals
+		{   Array<float3> ^ get() { return ref new Array<float3>(mNormals.data, mNormals.size()); }}
 
-		property  IVector<float3> ^ Tangents
-		{   IVector<float3> ^ get() { return ref new Vector<float3>(mTangents.begin(), mTangents.end()); }}
+		property  Array<float3> ^ Tangents
+		{   Array<float3> ^ get() { return ref new Array<float3>(mTangents.data, mTangents.size()); }}
 
-		property  IVector<float3> ^ BiNormals
-		{   IVector<float3> ^ get() { return ref new Vector<float3>(mBiNormals.begin(), mBiNormals.end()); }}
+		property  Array<float3> ^ BiNormals
+		{   Array<float3> ^ get() { return ref new Array<float3>(mBiNormals.data, mBiNormals.size()); }}
 
-		property  IVector<Vector<float3> ^> ^ TextureCoordinates
+		property  IVector<IVector<float3> ^> ^ TextureCoordinates
 		{
-			IVector<Vector<float3>^> ^ get(){ return mTextureCoordinates ;}
+			IVector<IVector<float3> ^ > ^ get()
+			{
+				Vector<Vector<float3> ^> ^ result = ref new Vector<Vector<float3> ^>();
+				for (std::vector<float3> item : mTextureCoordinates)
+				{
+					result->Append(ref new Vector<float3>(begin(item), end(item)) );
+				}
+				return (IVector<IVector<float3> ^> ^)result;
+			}
 		}
 
-		property IVector<Vector<float4> ^> ^ VertexColors
+		property IVector<IVector<float4> ^> ^ VertexColors
 		{ 
-			IVector<Vector<float4> ^> ^ get() { return mVertexColors; }
+			IVector<IVector<float4> ^> ^ get()
+			{				
+				Vector<Vector<float4> ^> ^ result = ref new Vector<Vector<float4> ^>();
+				for (std::vector<float4>  item : mVertexColors)
+				{
+					result->Append(ref new Vector<float4>(begin(item), end(item)) );
+				}
+				return (IVector<IVector<float4> ^> ^)result;
+			}
 		}
 
-		property IVector<UINT> ^ Indices
-		{  IVector<UINT > ^ get() { return ref new Vector<UINT>(mIndices.begin(), mIndices.end()); }}
+		property Array<UINT> ^ Indices
+		{  Array<UINT > ^ get() { return ref new Array<UINT>(mIndices.data, mIndices.size()); }}
 
 
 		property UINT FaceCount
@@ -84,22 +97,22 @@ namespace HolographicDXMatModMeshLibrary
 		}
 		property bool HasMeshes
 		{
-			bool get() { return (mMeshes->Size > 0); }
+			bool get() { return (mMeshes.size() > 0); }
 		}
 
-		property bool HasMaterials { bool get() { return (mMaterials->Size > 0); }
+		property bool HasMaterials { bool get() { return (mMaterials.size() > 0); }
 		}
 
 		property bool HasAnimations;
 
 		property IVector<Mesh^> ^ Meshes
 		{
-			IVector<Mesh^> ^ get() { return mMeshes; }
+			IVector<Mesh^> ^ get() { return ref new Vector<Mesh^> (begin(mMeshes), end(mMeshes)); }
 		}
 
 		property IVector<ModelMaterial ^> ^ Materials
 		{
-			IVector<ModelMaterial^> ^ get() { return mMaterials; }
+			IVector<ModelMaterial^> ^ get() { return ref new Vector<ModelMaterial^>( begin(mMaterials), end(mMaterials)); }
 		}
 
 
@@ -108,36 +121,33 @@ namespace HolographicDXMatModMeshLibrary
 
 	internal:
 		void CreateIndexBuffer(ID3D11Buffer** indexBuffer);
-		void CreateCachedVertexAndIndexBuffers(ID3D11Device& device);
+	//	void CreateCachedVertexAndIndexBuffers(ID3D11Device& device);
+		Mesh(Model^ model, aiMesh mesh);
 
-
-	private:
-		Mesh( Model^ model, aiMesh mesh);
-		Mesh^ operator=(const Mesh^ rhs);
+	private:		
+		/*	Mesh^ operator=(const Mesh^ rhs);
 		BufferContainer* VertexBuffer();
-		BufferContainer* IndexBuffer();
+		BufferContainer* IndexBuffer();*/
 
 		Model ^ mModel;
 		ModelMaterial^ mMaterial;
-		String ^ m_Name;
+		
 		std::string mname;
 		std::vector<XMFLOAT3> mVertices;
 		std::vector<XMFLOAT3> mNormals;
 		std::vector<XMFLOAT3> mTangents;
 		std::vector<XMFLOAT3> mBiNormals;
-		Vector<Vector<float3>^> ^ mTextureCoordinates;
-		Vector<Vector<float4>^> ^ mVertexColors;
+		std::vector<std::vector<float3>> mTextureCoordinates;
+		std::vector<std::vector<float4>>  mVertexColors;
 		UINT mFaceCount;
 		std::vector<UINT> mIndices;
 
-		BufferContainer* mVertexBuffer;
+	/*	BufferContainer* mVertexBuffer;
 		BufferContainer* mIndexBuffer;
-
-	internal:
-	//	bool HasAnimations() const;
-
-		Vector<Mesh^>^ mMeshes;
-		Vector<ModelMaterial^>^ mMaterials;
+*/
+	internal:	
+		std::vector<Mesh^> mMeshes;
+		std::vector<ModelMaterial^> mMaterials;
 	};
 
 }

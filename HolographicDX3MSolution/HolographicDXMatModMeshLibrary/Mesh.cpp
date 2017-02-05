@@ -16,7 +16,7 @@ namespace HolographicDXMatModMeshLibrary
 
 	Mesh::Mesh ( Model^ model, aiMesh mesh)
 		:mModel(model),  mname(mesh.mName.C_Str()), mVertices(), mNormals(), mTangents(), mBiNormals(), mTextureCoordinates(), mVertexColors(),
-		mFaceCount(0), mIndices(), mVertexBuffer(), mIndexBuffer()
+		mFaceCount(0), mIndices()//, mVertexBuffer(), mIndexBuffer()
 	{		
 		//mMaterial = mModel->Cu
 		mMaterial = mModel->Materials->GetAt(mesh.mMaterialIndex);
@@ -54,16 +54,16 @@ namespace HolographicDXMatModMeshLibrary
 		UINT uvChannelCount = mesh.GetNumUVChannels();
 		for (UINT i = 0; i < uvChannelCount; i++)
 		{
-			//std::vector<XMFLOAT3>* textureCoordinates = new std::vector<XMFLOAT3>();
-			//textureCoordinates->reserve(mesh.mNumVertices);
-			Vector<float3> ^ textureCoordinates = ref new Vector<float3>(mesh.mNumVertices);			
-			mTextureCoordinates->Append(textureCoordinates);
+			std::vector<float3> textureCoordinates(mesh.mNumVertices);
+			
+			mTextureCoordinates.push_back(textureCoordinates);
 
 			aiVector3D* aiTextureCoordinates = mesh.mTextureCoords[i];
 			for (UINT j = 0; j < mesh.mNumVertices; j++)
 			{
-				auto xmf = XMFLOAT3(reinterpret_cast<const float*>(&aiTextureCoordinates[j]));
-				textureCoordinates->Append(float3(xmf.x, xmf.y, xmf.z));
+				auto fl = XMFLOAT3(reinterpret_cast<const float*>(&aiTextureCoordinates[j]));
+				textureCoordinates.push_back(float3(fl.x, fl.y, fl.z));
+
 			}
 		}
 
@@ -71,14 +71,16 @@ namespace HolographicDXMatModMeshLibrary
 		UINT colorChannelCount = mesh.GetNumColorChannels();
 		for (UINT i = 0; i < colorChannelCount; i++)
 		{
-			Vector<float4>^ vertexColors = ref new Vector<float4>(mesh.mNumVertices);			
-			mVertexColors->Append(vertexColors);
+			std::vector<float4> vertexColors(mesh.mNumVertices);
+
+			mVertexColors.push_back(vertexColors);
+
 
 			aiColor4D* aiVertexColors = mesh.mColors[i];
 			for (UINT j = 0; j < mesh.mNumVertices; j++)
 			{
 				auto xmf4 = XMFLOAT4(reinterpret_cast<const float*>(&aiVertexColors[j]));
-				vertexColors->Append(float4(xmf4.x, xmf4.y, xmf4.z, xmf4.w));
+				vertexColors.push_back(float4(xmf4.x, xmf4.y, xmf4.z, xmf4.w));
 			}
 		}
 
@@ -100,19 +102,19 @@ namespace HolographicDXMatModMeshLibrary
 
 	Mesh::~Mesh()
 	{
-		mTextureCoordinates->Clear();
-		mTextureCoordinates->Dispose();
-		mTextureCoordinates = nullptr;
+		mTextureCoordinates.clear();
+	//	mTextureCoordinates->Dispose();
+		//mTextureCoordinates = nullptr;
 
-		mVertexColors->Clear();
-		mVertexColors->Dispose();
-		mVertexColors = nullptr;
+		mVertexColors.clear();
+		//mVertexColors->Dispose();
+		//mVertexColors = nullptr;
 
-		mVertexBuffer->ReleaseBuffer();
-		mIndexBuffer->ReleaseBuffer();
+	/*	mVertexBuffer->ReleaseBuffer();
+		mIndexBuffer->ReleaseBuffer();*/
 	}
 	
-	BufferContainer* Mesh::VertexBuffer()
+	/*BufferContainer* Mesh::VertexBuffer()
 	{
 		return mVertexBuffer;
 	}
@@ -120,7 +122,7 @@ namespace HolographicDXMatModMeshLibrary
 	BufferContainer* Mesh::IndexBuffer()
 	{
 		return mIndexBuffer;
-	}
+	}*/
 
 	bool Mesh::HasCachedVertexBuffer() 
 	{
@@ -156,19 +158,19 @@ namespace HolographicDXMatModMeshLibrary
 		}
 	}
 
-	void Mesh::CreateCachedVertexAndIndexBuffers(ID3D11Device& device) //, const Material& material)
-	{
-		mVertexBuffer->ReleaseBuffer();
-		mIndexBuffer->ReleaseBuffer();
+	//void Mesh::CreateCachedVertexAndIndexBuffers(ID3D11Device& device) //, const Material& material)
+	//{
+	///*	mVertexBuffer->ReleaseBuffer();
+	//	mIndexBuffer->ReleaseBuffer();*/
 
-		ID3D11Buffer* buffer = nullptr;
-		//material.CreateVertexBuffer(&device, *this, &buffer);
-		mVertexBuffer->SetBuffer(buffer);
-		mVertexBuffer->SetElementCount(mVertices.size());
+	//	ID3D11Buffer* buffer = nullptr;
+	//	//material.CreateVertexBuffer(&device, *this, &buffer);
+	//	mVertexBuffer->SetBuffer(buffer);
+	//	mVertexBuffer->SetElementCount(mVertices.size());
 
-		buffer = nullptr;
-		CreateIndexBuffer(&buffer);
-		mIndexBuffer->SetBuffer(buffer);
-		mIndexBuffer->SetElementCount(mIndices.size());
-	}
+	//	buffer = nullptr;
+	//	CreateIndexBuffer(&buffer);
+	//	mIndexBuffer->SetBuffer(buffer);
+	//	mIndexBuffer->SetElementCount(mIndices.size());
+	//}
 }
