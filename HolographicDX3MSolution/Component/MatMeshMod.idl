@@ -1,0 +1,108 @@
+import "inspectable.idl";
+import "windows.ui.core.idl";
+import "windows.foundation.numerics.idl";
+import "eventtoken.idl";
+
+namespace MatMeshMod
+{
+	runtimeclass Model;
+	runtimeclass Mesh;
+	runtimeclass ModelMaterial;
+	
+	interface IModel;
+	interface IMesh;
+	interface IModelMaterial;
+
+
+	//f0cd5b84-e86e-4efb-a08a-437bd308f992
+	[version(1.0)]
+	[uuid(f0cd5b84-e86e-4efb-a08a-437bd308f992)]
+	interface IModel : IInspectable
+	{
+		[propget] HRESULT HasMeshes([out, retval] boolean * hasMeshes);
+		[propget] HRESULT HasMaterials([out, retval] boolean * hasMaterials);
+		[propget] HRESULT HasAnimations([out, retval] boolean * hasAnimations);
+		[propget] HRESULT Meshes([out, retval] Windows.Foundation.Collections.IVectorView<IMesh> ** meshes);
+		[propget] HRESULT Materials([out, retval] Windows.Foundation.Collections.IVectorView<IModelMaterial> ** materials);
+	}
+
+	[version(1.0)]
+	[uuid(698a2f11-041d-4c4a-891f-d5e5f9b4c42e)]
+	interface IModelFactory : IInspectable
+	{
+		HRESULT CreateModel([in] Windows.Foundation.Collections.IVectorView<byte> * modelFileData, [in] boolean flipUVs,
+			[out][retval] Model ** instance);
+
+	}
+	
+	[version(1.0)]
+	[uuid(a7393375-38bd-42db-adb3-72d9b0e6ad61)]
+	interface IModelMaterial : IInspectable
+	{
+		[propget] HRESULT Model([out, retval] IModel ** currentModel);
+
+	}
+
+	//7e82f800-e959-4376-b52a-0b86a2ea3d34
+	[version(1.0)]
+	[uuid(7e82f800-e959-4376-b52a-0b86a2ea3d34)]
+	interface IModelMaterialFactory : IInspectable
+	{
+		HRESULT CreateModelMaterial([in] IModel * model,
+			[out][retval] ModelMaterial ** instance);
+
+	}
+		
+
+	[version(1.0)]
+	[uuid(71d484b8-8a81-4200-b208-2b734541ea96)]
+	interface IMesh : IInspectable
+	{
+	
+		//Generic Collections and Iterators
+		//IVectorView - readonly vector
+		//IVector - full fledge
+		[propget] HRESULT Model([out, retval] IModel ** currentModel);
+		[propget] HRESULT ModelMaterial([out, retval] IModelMaterial ** currentMaterial);
+		[propget] HRESULT Name([out, retval] HSTRING * name);
+		[propget] HRESULT Vertices([out, retval] Windows.Foundation.Collections.IVectorView<Windows.Foundation.Numerics.Vector3> ** vertices);
+		[propget] HRESULT Normals([out, retval] Windows.Foundation.Collections.IVectorView<Windows.Foundation.Numerics.Vector3> ** normals);
+		[propget] HRESULT Tangents([out, retval] Windows.Foundation.Collections.IVectorView<Windows.Foundation.Numerics.Vector3> ** tangents);
+		[propget] HRESULT BiNormals([out, retval] Windows.Foundation.Collections.IVectorView<Windows.Foundation.Numerics.Vector3> ** binormals);
+		[propget] HRESULT TextureCoordinates([out, retval] Windows.Foundation.Collections.IVectorView< Windows.Foundation.Collections.IVectorView<Windows.Foundation.Numerics.Vector3> *> ** textureCoordinates);
+		[propget] HRESULT VertexColors([out, retval] Windows.Foundation.Collections.IVectorView<Windows.Foundation.Collections.IVectorView<Windows.Foundation.Numerics.Quaternion> * > ** vertexColors);
+		[propget] HRESULT Indices([out, retval] Windows.Foundation.Collections.IVectorView<unsigned int> ** indices);
+		[propget] HRESULT FaceCount([out, retval] unsigned int * faceCount);
+		[propget] HRESULT HasMeshes([out, retval] boolean * hasMeshes);
+		[propget] HRESULT HasMaterials([out, retval] boolean * hasMaterials);
+		[propget] HRESULT HasAnimations([out, retval] boolean * hasAnimations);
+
+		[propget] HRESULT Meshes([out, retval] Windows.Foundation.Collections.IVectorView<IMesh> ** meshes);
+		[propget] HRESULT Materials([out, retval] Windows.Foundation.Collections.IVectorView<IModelMaterial> ** materials);
+
+
+	}
+
+	[version(1.0)]
+	[activatable(1.0)]
+	[activatable(IModelFactory, 1.0)]
+	runtimeclass Model
+	{
+		[default] interface IModel;
+	}
+	
+	[version(1.0)]
+	[activatable(1.0)]
+	[activatable(IModelMaterialFactory, 1.0)]
+	runtimeclass ModelMaterial
+	{
+		[default] interface IModelMaterial;
+	}
+
+	[version(1.0)]
+	[activatable(1.0)]	
+	runtimeclass Mesh
+	{
+		[default] interface IMesh;
+	}
+}

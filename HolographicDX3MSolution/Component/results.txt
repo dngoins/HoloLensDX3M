@@ -1,0 +1,82 @@
+Processing C:\Users\dngoins\AppData\Local\Temp\Component.idl-34536aa8
+Processing C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt\inspectable.idl
+Processing C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared\wtypes.idl
+Processing C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared\wtypesbase.idl
+Processing C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared\basetsd.h
+Processing C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared\guiddef.h
+Processing C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um\unknwn.idl
+Processing C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt\hstring.idl
+Processing .\windows.ui.core.idl-4979fe60
+Processing C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt\AsyncInfo.idl
+Processing C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt\EventToken.idl
+Processing .\Windows.Foundation.idl-697a8454
+Processing .\IVectorChangedEventArgs.idl-99f578af
+Processing C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um\oaidl.idl
+Processing C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um\objidl.idl
+Processing .\Windows.System.idl-cdf289b7
+Processing .\Windows.ApplicationModel.idl-6b6d7d7a
+Processing .\Windows.ApplicationModel.Core.idl-49a6db06
+Processing .\Windows.ApplicationModel.Activation.idl-18efcabd
+Processing .\Windows.ApplicationModel.Appointments.AppointmentsProvider.idl-1ae68813
+Processing .\Windows.ApplicationModel.Appointments.idl-b65dffd5
+Processing .\Windows.UI.idl-bb6179ab
+Processing .\Windows.UI.Popups.idl-a4bd05e9
+Processing .\Windows.ApplicationModel.Background.idl-cd0fbb97
+Processing .\Windows.ApplicationModel.Calls.Background.idl-80f49161
+Processing .\Windows.Devices.Bluetooth.idl-6f93dd07
+Processing .\Windows.Devices.Bluetooth.GenericAttributeProfile.idl-b4a08b90
+Processing .\Windows.Storage.Streams.idl-00809f5b
+Processing .\Windows.Storage.idl-64e82055
+Processing .\Windows.Storage.FileProperties.idl-029bcfb6
+Processing .\Windows.Devices.Geolocation.idl-1bcc5601
+Processing .\Windows.Storage.Provider.idl-fea0a1ae
+Processing .\Windows.Storage.Search.idl-9687f91e
+Processing .\Windows.Data.Text.idl-2ab9c0ef
+Processing .\Windows.Devices.Bluetooth.Rfcomm.idl-cc67909c
+Processing .\Windows.Devices.Enumeration.idl-6683d07b
+Processing .\Windows.Networking.idl-d9ca076f
+Processing .\Windows.Networking.Connectivity.idl-318b146f
+Processing .\Windows.Networking.Sockets.idl-d7f903d9
+Processing .\Windows.Security.Credentials.idl-8eb1438a
+Processing .\Windows.Security.Cryptography.Core.idl-604bac3d
+Processing .\Windows.Security.Cryptography.Certificates.idl-509bf65f
+Processing .\Windows.Web.idl-06efac09
+Processing .\Windows.Devices.Bluetooth.Advertisement.idl-ba0b32f9
+Processing .\Windows.Devices.Bluetooth.Background.idl-d508ae05
+Processing .\Windows.Devices.Sensors.idl-60b75b47
+Processing .\Windows.Graphics.Display.idl-be6559f9
+Processing .\Windows.Devices.SmartCards.idl-abe09649
+Processing .\Windows.Devices.Sms.idl-875216b7
+Processing .\Windows.UI.Notifications.idl-3e88a2de
+Processing .\Windows.Data.Xml.Dom.idl-b4a7ee66
+Processing .\Windows.UI.Notifications.Management.idl-ec4453bd
+Processing .\Windows.ApplicationModel.Calls.idl-38dd38a9
+Processing .\Windows.ApplicationModel.Contacts.idl-4e9e5bb4
+Processing .\Windows.UI.ViewManagement.idl-a44e612a
+Processing .\Windows.ApplicationModel.Contacts.Provider.idl-3f799c34
+Processing .\Windows.ApplicationModel.DataTransfer.ShareTarget.idl-5e2e3538
+Processing .\Windows.ApplicationModel.DataTransfer.idl-3010b506
+Processing .\Windows.Security.EnterpriseData.idl-f4cfdd04
+Processing .\Windows.ApplicationModel.Search.idl-196509eb
+Processing .\Windows.ApplicationModel.UserDataAccounts.Provider.idl-ebbd2f31
+Processing .\Windows.ApplicationModel.UserDataAccounts.idl-0b190bf8
+Processing .\Windows.ApplicationModel.Email.idl-bad2d21e
+Processing .\Windows.Devices.Printers.Extensions.idl-dc3b6843
+Processing .\Windows.Media.SpeechRecognition.idl-eacd5cb2
+Processing .\Windows.Globalization.idl-a6b600d3
+Processing .\Windows.Security.Authentication.Web.Provider.idl-636ad5b5
+Processing .\Windows.Security.Authentication.Web.idl-6705b89e
+Processing .\Windows.Security.Authentication.Web.Core.idl-26ca7427
+Processing .\Windows.Web.Http.idl-1ccbaa5b
+Processing .\Windows.Web.Http.Filters.idl-c7703185
+Processing .\Windows.Web.Http.Headers.idl-9a1af8e9
+Processing .\Windows.Storage.Pickers.Provider.idl-c53669da
+Processing .\Windows.Gaming.Input.idl-cc915851
+Processing .\Windows.Gaming.Input.ForceFeedback.idl-2911d9ee
+Processing .\Windows.Foundation.Numerics.idl-62cdceb2
+Processing .\Windows.System.RemoteSystems.idl-735c7149
+Processing .\Windows.UI.Input.idl-3c0bb0dd
+Processing .\Windows.Devices.Input.idl-2c42c781
+Processing .\Windows.UI.Input.Inking.idl-3ec0cbd7
+Processing .\Windows.UI.Input.Inking.Core.idl-d79ffb08
+Processing C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um\oaidl.acf
