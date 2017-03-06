@@ -84,9 +84,6 @@
     <ClCompile Include="lib_ServiceContainer.cpp">
       <Filter>Library</Filter>
     </ClCompile>
-    <ClCompile Include="lib_Skybox.cpp">
-      <Filter>Library</Filter>
-    </ClCompile>
     <ClCompile Include="lib_SpotLight.cpp">
       <Filter>Library</Filter>
     </ClCompile>
@@ -188,9 +185,6 @@
       <Filter>Library</Filter>
     </ClInclude>
     <ClInclude Include="lib_ServiceContainer.h">
-      <Filter>Library</Filter>
-    </ClInclude>
-    <ClInclude Include="lib_Skybox.h">
       <Filter>Library</Filter>
     </ClInclude>
     <ClInclude Include="lib_SpotLight.h">

@@ -4,8 +4,8 @@
 
 namespace DirectX
 {
-    class SpriteBatch;
-    class SpriteFont;
+   // class SpriteBatch;
+  //  class SpriteFont;
 }
 
 namespace MatMeshMod

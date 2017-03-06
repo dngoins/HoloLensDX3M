@@ -115,9 +115,10 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ModuleDefinitionFile>Exports.def</ModuleDefinitionFile>
       <AdditionalLibraryDirectories>$(ProjectDir)external\dngoinsFork_DirectXTK\Bin\UWP\$(PlatformTarget)\$(Configuration);$(ProjectDir)external\assimp\lib\$(PlatformTarget)\$(Configuration);$(UM_IncludePath)\$(PlatformTarget);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>d2d1.lib;d3d11.lib;dxgi.lib;dinput8.lib;windowscodecs.lib;dwrite.lib;kernel32.lib;DirectXTK.lib;Shlwapi.lib;assimpd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>d2d1.lib;d3d11.lib;dxgi.lib;windowscodecs.lib;dwrite.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;pathcch.lib;d3dcompiler.lib;assimpd.lib;dinput8.lib;dxguid.lib;Shlwapi.lib;zlibstaticd.lib</AdditionalDependencies>
       <ForceFileOutput>
       </ForceFileOutput>
+      <IgnoreSpecificDefaultLibraries>vccorlibd.lib</IgnoreSpecificDefaultLibraries>
     </Link>
     <Midl>
       <EnableWindowsRuntime>true</EnableWindowsRuntime>
@@ -167,9 +168,10 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ModuleDefinitionFile>Exports.def</ModuleDefinitionFile>
       <AdditionalLibraryDirectories>$(ProjectDir)external\dngoinsFork_DirectXTK\Bin\UWP\$(PlatformTarget)\$(Configuration);$(ProjectDir)external\assimp\lib\$(PlatformTarget)\$(Configuration);$(UM_IncludePath)\$(PlatformTarget);$(VCInstallDir)\lib\store;$(ProjectDir)external\dngoinsFork_DirectXTK\Bin\UWP\$(PlatformTarget)\$(Configuration);$(ProjectDir)external\assimp\lib\$(PlatformTarget)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>d2d1.lib;d3d11.lib;dxgi.lib;dinput8.lib;windowscodecs.lib;dwrite.lib;kernel32.lib;DirectXTK.lib;Shlwapi.lib;assimpd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>d2d1.lib;d3d11.lib;dxgi.lib;windowscodecs.lib;dwrite.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;pathcch.lib;d3dcompiler.lib;assimpd.lib;dinput8.lib;dxguid.lib;Shlwapi.lib;zlibstaticd.lib</AdditionalDependencies>
       <ForceFileOutput>
       </ForceFileOutput>
+      <IgnoreSpecificDefaultLibraries>vccorlibd.lib</IgnoreSpecificDefaultLibraries>
     </Link>
     <Midl>
       <EnableWindowsRuntime>true</EnableWindowsRuntime>
@@ -208,9 +210,10 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ModuleDefinitionFile>Exports.def</ModuleDefinitionFile>
       <AdditionalLibraryDirectories>$(ProjectDir)external\dngoinsFork_DirectXTK\Bin\UWP\$(PlatformTarget)\$(Configuration);$(ProjectDir)external\assimp\lib\$(PlatformTarget)\$(Configuration);$(UM_IncludePath)\$(PlatformTarget);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>d2d1.lib;d3d11.lib;dxgi.lib;dinput8.lib;windowscodecs.lib;dwrite.lib;kernel32.lib;DirectXTK.lib;Shlwapi.lib;assimpd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>d2d1.lib;d3d11.lib;dxgi.lib;windowscodecs.lib;dwrite.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;pathcch.lib;d3dcompiler.lib;assimpd.lib;dinput8.lib;dxguid.lib;Shlwapi.lib;zlibstaticd.lib</AdditionalDependencies>
       <ForceFileOutput>
       </ForceFileOutput>
+      <IgnoreSpecificDefaultLibraries>vccorlibd.lib</IgnoreSpecificDefaultLibraries>
     </Link>
     <Midl>
       <EnableWindowsRuntime>true</EnableWindowsRuntime>
@@ -249,9 +252,10 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ModuleDefinitionFile>Exports.def</ModuleDefinitionFile>
       <AdditionalLibraryDirectories>$(ProjectDir)external\dngoinsFork_DirectXTK\Bin\UWP\$(PlatformTarget)\$(Configuration);$(ProjectDir)external\assimp\lib\$(PlatformTarget)\$(Configuration);$(UM_IncludePath)\$(PlatformTarget);$(ProjectDir)external\dngoinsFork_DirectXTK\Bin\UWP\$(PlatformTarget)\$(Configuration);$(ProjectDir)external\assimp\lib\$(PlatformTarget)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>d2d1.lib;d3d11.lib;dxgi.lib;dinput8.lib;windowscodecs.lib;dwrite.lib;kernel32.lib;DirectXTK.lib;Shlwapi.lib;assimpd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>d2d1.lib;d3d11.lib;dxgi.lib;windowscodecs.lib;dwrite.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;pathcch.lib;d3dcompiler.lib;assimpd.lib;dinput8.lib;dxguid.lib;Shlwapi.lib;zlibstaticd.lib</AdditionalDependencies>
       <ForceFileOutput>
       </ForceFileOutput>
+      <IgnoreSpecificDefaultLibraries>vccorlibd.lib</IgnoreSpecificDefaultLibraries>
     </Link>
     <Midl>
       <EnableWindowsRuntime>true</EnableWindowsRuntime>
@@ -303,7 +307,6 @@
     <ClInclude Include="lib_RenderTarget.h" />
     <ClInclude Include="lib_SamplerStates.h" />
     <ClInclude Include="lib_ServiceContainer.h" />
-    <ClInclude Include="lib_Skybox.h" />
     <ClInclude Include="lib_SpotLight.h" />
     <ClInclude Include="lib_Utility.h" />
     <ClInclude Include="lib_VectorHelper.h" />
@@ -340,7 +343,6 @@
     <ClCompile Include="lib_RenderTarget.cpp" />
     <ClCompile Include="lib_SamplerStates.cpp" />
     <ClCompile Include="lib_ServiceContainer.cpp" />
-    <ClCompile Include="lib_Skybox.cpp" />
     <ClCompile Include="lib_SpotLight.cpp" />
     <ClCompile Include="lib_Utility.cpp" />
     <ClCompile Include="lib_VectorHelper.cpp" />

@@ -2,8 +2,8 @@
 #include "lib_FpsComponent.h"
 #include <sstream>
 #include <iomanip>
-#include <SpriteBatch.h>
-#include <SpriteFont.h>
+//#include <SpriteBatch.h>
+//#include <SpriteFont.h>
 #include "lib_Game.h"
 #include "lib_Utility.h"
 
