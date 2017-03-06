@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="MatMeshMod.cpp" />
+    <ClCompile Include="Precompiled.cpp" />
+    <ClCompile Include="lib_Game.cpp">
+      <Filter>Library</Filter>
+    </ClCompile>
+    <ClCompile Include="lib_Model.cpp">
+      <Filter>Library</Filter>
+    </ClCompile>
+    <ClCompile Include="lib_BlendStates.cpp">
+      <Filter>Library</Filter>
+    </ClCompile>
+    <ClCompile Include="lib_Camera.cpp">
+      <Filter>Library</Filter>
+    </ClCompile>
+    <ClCompile Include="lib_ColorHelper.cpp">
+      <Filter>Library</Filter>
+    </ClCompile>
+    <ClCompile Include="lib_DirectionalLight.cpp">
+      <Filter>Library</Filter>
+    </ClCompile>
+    <ClCompile Include="lib_DrawableGameComponent.cpp">
+      <Filter>Library</Filter>
+    </ClCompile>
+    <ClCompile Include="lib_FirstPersonCamera.cpp">
+      <Filter>Library</Filter>
+    </ClCompile>
+    <ClCompile Include="lib_FpsComponent.cpp">
+      <Filter>Library</Filter>
+    </ClCompile>
+    <ClCompile Include="lib_GameClock.cpp">
+      <Filter>Library</Filter>
+    </ClCompile>
+    <ClCompile Include="lib_GameComponent.cpp">
+      <Filter>Library</Filter>
+    </ClCompile>
+    <ClCompile Include="lib_GameException.cpp">
+      <Filter>Library</Filter>
+    </ClCompile>
+    <ClCompile Include="lib_GameTime.cpp">
+      <Filter>Library</Filter>
+    </ClCompile>
+    <ClCompile Include="lib_Grid.cpp">
+      <Filter>Library</Filter>
+    </ClCompile>
+    <ClCompile Include="lib_Keyboard.cpp">
+      <Filter>Library</Filter>
+    </ClCompile>
+    <ClCompile Include="lib_Light.cpp">
+      <Filter>Library</Filter>
+    </ClCompile>
+    <ClCompile Include="lib_MatrixHelper.cpp">
+      <Filter>Library</Filter>
+    </ClCompile>
+    <ClCompile Include="lib_Mesh.cpp">
+      <Filter>Library</Filter>
+    </ClCompile>
+    <ClCompile Include="lib_ModelMaterial.cpp">
+      <Filter>Library</Filter>
+    </ClCompile>
+    <ClCompile Include="lib_Mouse.cpp">
+      <Filter>Library</Filter>
+    </ClCompile>
+    <ClCompile Include="lib_PointLight.cpp">
+      <Filter>Library</Filter>
+    </ClCompile>
+    <ClCompile Include="lib_ProxyModel.cpp">
+      <Filter>Library</Filter>
+    </ClCompile>
+    <ClCompile Include="lib_RasterizerStates.cpp">
+      <Filter>Library</Filter>
+    </ClCompile>
+    <ClCompile Include="lib_RenderStateHelper.cpp">
+      <Filter>Library</Filter>
+    </ClCompile>
+    <ClCompile Include="lib_RenderTarget.cpp">
+      <Filter>Library</Filter>
+    </ClCompile>
+    <ClCompile Include="lib_SamplerStates.cpp">
+      <Filter>Library</Filter>
+    </ClCompile>
+    <ClCompile Include="lib_ServiceContainer.cpp">
+      <Filter>Library</Filter>
+    </ClCompile>
+    <ClCompile Include="lib_Skybox.cpp">
+      <Filter>Library</Filter>
+    </ClCompile>
+    <ClCompile Include="lib_SpotLight.cpp">
+      <Filter>Library</Filter>
+    </ClCompile>
+    <ClCompile Include="lib_Utility.cpp">
+      <Filter>Library</Filter>
+    </ClCompile>
+    <ClCompile Include="lib_VectorHelper.cpp">
+      <Filter>Library</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="debug.h" />
+    <ClInclude Include="HandleStrings.h" />
+    <ClInclude Include="Implements.h" />
+    <ClInclude Include="MatMeshMod.h" />
+    <ClInclude Include="Precompiled.h" />
+    <ClInclude Include="lib_Game.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="lib_GameException.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="lib_Model.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="lib_RTTI.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="lib_BlendStates.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="lib_Camera.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="lib_ColorHelper.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="lib_DirectionalLight.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="lib_DrawableGameComponent.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="lib_FirstPersonCamera.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="lib_FpsComponent.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="lib_GameClock.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="lib_GameComponent.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="lib_GameTime.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="lib_Grid.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="lib_Keyboard.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="lib_Light.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="lib_MathHelper.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="lib_MatrixHelper.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="lib_Mesh.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="lib_ModelMaterial.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="lib_Mouse.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="lib_PointLight.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="lib_ProxyModel.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="lib_RasterizerStates.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="lib_RenderStateHelper.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="lib_RenderTarget.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="lib_SamplerStates.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="lib_ServiceContainer.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="lib_Skybox.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="lib_SpotLight.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="lib_Utility.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="lib_VectorHelper.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="lib_VertexDeclarations.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="MatMeshMod.idl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Exports.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Library">
+      <UniqueIdentifier>{521f9989-0d2c-4951-940c-868444e6d211}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

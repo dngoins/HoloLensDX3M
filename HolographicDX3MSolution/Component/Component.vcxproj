@@ -39,14 +39,14 @@
     <PlatformToolset>v140</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
-    <WindowsAppContainer>true</WindowsAppContainer>
+    <WindowsAppContainer>false</WindowsAppContainer>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
-    <WindowsAppContainer>true</WindowsAppContainer>
+    <WindowsAppContainer>false</WindowsAppContainer>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
@@ -54,7 +54,7 @@
     <PlatformToolset>v140</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
-    <WindowsAppContainer>true</WindowsAppContainer>
+    <WindowsAppContainer>false</WindowsAppContainer>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -76,27 +76,27 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <ExcludePath>$(VC_IncludePath);$(MSBuild_ExecutablePath);$(VC_LibraryPath_x86);</ExcludePath>
-    <SourcePath>$(VC_SourcePath);$(VC_IncludePath);$(WindowsSDK_IncludePath)</SourcePath>
-    <ExecutablePath>$(VC_ExecutablePath_x86);$(WindowsSDK_ExecutablePath);$(VS_ExecutablePath);$(MSBuild_ExecutablePath);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);$(VC_IncludePath);$(WindowsSDK_IncludePath);$(VC_IncludePath);$(WindowsSDK_IncludePath);</ExecutablePath>
+    <ExcludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(MSBuild_ExecutablePath);$(VC_LibraryPath_x86);</ExcludePath>
+    <SourcePath>$(VC_SourcePath);</SourcePath>
+    <ExecutablePath>$(VC_ExecutablePath_x86);$(WindowsSDK_ExecutablePath);$(VS_ExecutablePath);$(MSBuild_ExecutablePath);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH)</ExecutablePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <ExcludePath>$(VC_IncludePath);$(MSBuild_ExecutablePath);$(VC_LibraryPath_x64);</ExcludePath>
-    <SourcePath>$(VC_SourcePath);$(VC_IncludePath);$(WindowsSDK_IncludePath)</SourcePath>
-    <ExecutablePath>$(VC_ExecutablePath_x64);$(WindowsSDK_ExecutablePath);$(VS_ExecutablePath);$(MSBuild_ExecutablePath);$(FxCopDir);$(PATH);$(VC_IncludePath);$(WindowsSDK_IncludePath);$(VC_IncludePath);$(WindowsSDK_IncludePath);</ExecutablePath>
+    <ExcludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(MSBuild_ExecutablePath);$(VC_LibraryPath_x64)</ExcludePath>
+    <SourcePath>$(VC_SourcePath);</SourcePath>
+    <ExecutablePath>$(VC_ExecutablePath_x64);$(WindowsSDK_ExecutablePath);$(VS_ExecutablePath);$(MSBuild_ExecutablePath);$(FxCopDir);$(PATH)</ExecutablePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <ExcludePath>$(VC_IncludePath);$(MSBuild_ExecutablePath);$(VC_LibraryPath_x86);</ExcludePath>
-    <SourcePath>$(VC_SourcePath);$(VC_IncludePath);$(WindowsSDK_IncludePath)</SourcePath>
-    <ExecutablePath>$(VC_ExecutablePath_x86);$(WindowsSDK_ExecutablePath);$(VS_ExecutablePath);$(MSBuild_ExecutablePath);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);$(VC_IncludePath);$(WindowsSDK_IncludePath);$(VC_IncludePath);$(WindowsSDK_IncludePath);</ExecutablePath>
+    <ExcludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(MSBuild_ExecutablePath);$(VC_LibraryPath_x86);</ExcludePath>
+    <SourcePath>$(VC_SourcePath);</SourcePath>
+    <ExecutablePath>$(VC_ExecutablePath_x86);$(WindowsSDK_ExecutablePath);$(VS_ExecutablePath);$(MSBuild_ExecutablePath);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH)</ExecutablePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <ExcludePath>$(VC_IncludePath);$(MSBuild_ExecutablePath);$(VC_LibraryPath_x64);</ExcludePath>
-    <SourcePath>$(VC_SourcePath);$(VC_IncludePath);$(WindowsSDK_IncludePath)</SourcePath>
-    <ExecutablePath>$(VC_ExecutablePath_x64);$(WindowsSDK_ExecutablePath);$(VS_ExecutablePath);$(MSBuild_ExecutablePath);$(FxCopDir);$(PATH);$(VC_IncludePath);$(WindowsSDK_IncludePath);$(VC_IncludePath);$(WindowsSDK_IncludePath);</ExecutablePath>
+    <ExcludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(MSBuild_ExecutablePath);$(VC_LibraryPath_x64)</ExcludePath>
+    <SourcePath>$(VC_SourcePath);</SourcePath>
+    <ExecutablePath>$(VC_ExecutablePath_x64);$(WindowsSDK_ExecutablePath);$(VS_ExecutablePath);$(MSBuild_ExecutablePath);$(FxCopDir);$(PATH)</ExecutablePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -108,12 +108,16 @@
       <PrecompiledHeaderFile>Precompiled.h</PrecompiledHeaderFile>
       <BrowseInformation>true</BrowseInformation>
       <AdditionalUsingDirectories>C:\Program Files (x86)\Windows Kits\10\UnionMetadata</AdditionalUsingDirectories>
-      <AdditionalIncludeDirectories>$(WindowsSDK_IncludePath)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(WindowsSDK_IncludePath);$(ProjectDir)external\dngoinsFork_DirectXTK\Inc;$(ProjectDir)external\assimp\include;$(ProjectDir)external\assimp;$(WindowsSDK_IncludePath);$(ProjectDir)external\dngoinsFork_DirectXTK\Inc</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ModuleDefinitionFile>Exports.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(ProjectDir)external\dngoinsFork_DirectXTK\Bin\UWP\$(PlatformTarget)\$(Configuration);$(ProjectDir)external\assimp\lib\$(PlatformTarget)\$(Configuration);$(UM_IncludePath)\$(PlatformTarget);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>d2d1.lib;d3d11.lib;dxgi.lib;dinput8.lib;windowscodecs.lib;dwrite.lib;kernel32.lib;DirectXTK.lib;Shlwapi.lib;assimpd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ForceFileOutput>
+      </ForceFileOutput>
     </Link>
     <Midl>
       <EnableWindowsRuntime>true</EnableWindowsRuntime>
@@ -156,12 +160,16 @@
       <SDLCheck>true</SDLCheck>
       <PrecompiledHeaderFile>Precompiled.h</PrecompiledHeaderFile>
       <AdditionalUsingDirectories>C:\Program Files (x86)\Windows Kits\10\UnionMetadata</AdditionalUsingDirectories>
-      <AdditionalIncludeDirectories>$(WindowsSDK_IncludePath)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(WindowsSDK_IncludePath);$(ProjectDir)external\dngoinsFork_DirectXTK\Inc;$(ProjectDir)external\assimp\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ModuleDefinitionFile>Exports.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(ProjectDir)external\dngoinsFork_DirectXTK\Bin\UWP\$(PlatformTarget)\$(Configuration);$(ProjectDir)external\assimp\lib\$(PlatformTarget)\$(Configuration);$(UM_IncludePath)\$(PlatformTarget);$(VCInstallDir)\lib\store;$(ProjectDir)external\dngoinsFork_DirectXTK\Bin\UWP\$(PlatformTarget)\$(Configuration);$(ProjectDir)external\assimp\lib\$(PlatformTarget)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>d2d1.lib;d3d11.lib;dxgi.lib;dinput8.lib;windowscodecs.lib;dwrite.lib;kernel32.lib;DirectXTK.lib;Shlwapi.lib;assimpd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ForceFileOutput>
+      </ForceFileOutput>
     </Link>
     <Midl>
       <EnableWindowsRuntime>true</EnableWindowsRuntime>
@@ -191,7 +199,7 @@
       <SDLCheck>true</SDLCheck>
       <PrecompiledHeaderFile>Precompiled.h</PrecompiledHeaderFile>
       <AdditionalUsingDirectories>C:\Program Files (x86)\Windows Kits\10\UnionMetadata</AdditionalUsingDirectories>
-      <AdditionalIncludeDirectories>$(WindowsSDK_IncludePath)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(WindowsSDK_IncludePath);$(ProjectDir)external\dngoinsFork_DirectXTK\Inc;$(ProjectDir)external\assimp\include;$(WindowsSDK_IncludePath)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -199,6 +207,10 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ModuleDefinitionFile>Exports.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(ProjectDir)external\dngoinsFork_DirectXTK\Bin\UWP\$(PlatformTarget)\$(Configuration);$(ProjectDir)external\assimp\lib\$(PlatformTarget)\$(Configuration);$(UM_IncludePath)\$(PlatformTarget);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>d2d1.lib;d3d11.lib;dxgi.lib;dinput8.lib;windowscodecs.lib;dwrite.lib;kernel32.lib;DirectXTK.lib;Shlwapi.lib;assimpd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ForceFileOutput>
+      </ForceFileOutput>
     </Link>
     <Midl>
       <EnableWindowsRuntime>true</EnableWindowsRuntime>
@@ -228,7 +240,7 @@
       <SDLCheck>true</SDLCheck>
       <PrecompiledHeaderFile>Precompiled.h</PrecompiledHeaderFile>
       <AdditionalUsingDirectories>C:\Program Files (x86)\Windows Kits\10\UnionMetadata</AdditionalUsingDirectories>
-      <AdditionalIncludeDirectories>$(WindowsSDK_IncludePath)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(WindowsSDK_IncludePath);$(ProjectDir)external\dngoinsFork_DirectXTK\Inc;$(ProjectDir)external\assimp\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -236,6 +248,10 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ModuleDefinitionFile>Exports.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(ProjectDir)external\dngoinsFork_DirectXTK\Bin\UWP\$(PlatformTarget)\$(Configuration);$(ProjectDir)external\assimp\lib\$(PlatformTarget)\$(Configuration);$(UM_IncludePath)\$(PlatformTarget);$(ProjectDir)external\dngoinsFork_DirectXTK\Bin\UWP\$(PlatformTarget)\$(Configuration);$(ProjectDir)external\assimp\lib\$(PlatformTarget)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>d2d1.lib;d3d11.lib;dxgi.lib;dinput8.lib;windowscodecs.lib;dwrite.lib;kernel32.lib;DirectXTK.lib;Shlwapi.lib;assimpd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ForceFileOutput>
+      </ForceFileOutput>
     </Link>
     <Midl>
       <EnableWindowsRuntime>true</EnableWindowsRuntime>
@@ -255,12 +271,79 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Common.h" />
     <ClInclude Include="debug.h" />
     <ClInclude Include="HandleStrings.h" />
     <ClInclude Include="Implements.h" />
+    <ClInclude Include="lib_BlendStates.h" />
+    <ClInclude Include="lib_Camera.h" />
+    <ClInclude Include="lib_ColorHelper.h" />
+    <ClInclude Include="lib_DirectionalLight.h" />
+    <ClInclude Include="lib_DrawableGameComponent.h" />
+    <ClInclude Include="lib_FirstPersonCamera.h" />
+    <ClInclude Include="lib_FpsComponent.h" />
+    <ClInclude Include="lib_Game.h" />
+    <ClInclude Include="lib_GameClock.h" />
+    <ClInclude Include="lib_GameComponent.h" />
+    <ClInclude Include="lib_GameException.h" />
+    <ClInclude Include="lib_GameTime.h" />
+    <ClInclude Include="lib_Grid.h" />
+    <ClInclude Include="lib_Keyboard.h" />
+    <ClInclude Include="lib_Light.h" />
+    <ClInclude Include="lib_MathHelper.h" />
+    <ClInclude Include="lib_MatrixHelper.h" />
+    <ClInclude Include="lib_Mesh.h" />
+    <ClInclude Include="lib_Model.h" />
+    <ClInclude Include="lib_ModelMaterial.h" />
+    <ClInclude Include="lib_Mouse.h" />
+    <ClInclude Include="lib_PointLight.h" />
+    <ClInclude Include="lib_ProxyModel.h" />
+    <ClInclude Include="lib_RasterizerStates.h" />
+    <ClInclude Include="lib_RenderStateHelper.h" />
+    <ClInclude Include="lib_RenderTarget.h" />
+    <ClInclude Include="lib_SamplerStates.h" />
+    <ClInclude Include="lib_ServiceContainer.h" />
+    <ClInclude Include="lib_Skybox.h" />
+    <ClInclude Include="lib_SpotLight.h" />
+    <ClInclude Include="lib_Utility.h" />
+    <ClInclude Include="lib_VectorHelper.h" />
+    <ClInclude Include="lib_VertexDeclarations.h" />
+    <ClInclude Include="MatMeshMod.h" />
     <ClInclude Include="Precompiled.h" />
+    <ClInclude Include="lib_RTTI.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="lib_BlendStates.cpp" />
+    <ClCompile Include="lib_Camera.cpp" />
+    <ClCompile Include="lib_ColorHelper.cpp" />
+    <ClCompile Include="lib_DirectionalLight.cpp" />
+    <ClCompile Include="lib_DrawableGameComponent.cpp" />
+    <ClCompile Include="lib_FirstPersonCamera.cpp" />
+    <ClCompile Include="lib_FpsComponent.cpp" />
+    <ClCompile Include="lib_Game.cpp" />
+    <ClCompile Include="lib_GameClock.cpp" />
+    <ClCompile Include="lib_GameComponent.cpp" />
+    <ClCompile Include="lib_GameException.cpp" />
+    <ClCompile Include="lib_GameTime.cpp" />
+    <ClCompile Include="lib_Grid.cpp" />
+    <ClCompile Include="lib_Keyboard.cpp" />
+    <ClCompile Include="lib_Light.cpp" />
+    <ClCompile Include="lib_MatrixHelper.cpp" />
+    <ClCompile Include="lib_Mesh.cpp" />
+    <ClCompile Include="lib_Model.cpp" />
+    <ClCompile Include="lib_ModelMaterial.cpp" />
+    <ClCompile Include="lib_Mouse.cpp" />
+    <ClCompile Include="lib_PointLight.cpp" />
+    <ClCompile Include="lib_ProxyModel.cpp" />
+    <ClCompile Include="lib_RasterizerStates.cpp" />
+    <ClCompile Include="lib_RenderStateHelper.cpp" />
+    <ClCompile Include="lib_RenderTarget.cpp" />
+    <ClCompile Include="lib_SamplerStates.cpp" />
+    <ClCompile Include="lib_ServiceContainer.cpp" />
+    <ClCompile Include="lib_Skybox.cpp" />
+    <ClCompile Include="lib_SpotLight.cpp" />
+    <ClCompile Include="lib_Utility.cpp" />
+    <ClCompile Include="lib_VectorHelper.cpp" />
     <ClCompile Include="MatMeshMod.cpp" />
     <ClCompile Include="Precompiled.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

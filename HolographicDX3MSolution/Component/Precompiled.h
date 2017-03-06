@@ -37,3 +37,4 @@ struct ComRuntime
 #define TRACEW OutputDebugString
 #define ASSERT _ASSERTE
 
+#include "Common.h"
