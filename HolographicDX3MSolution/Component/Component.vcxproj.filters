@@ -199,6 +199,7 @@
     <ClInclude Include="lib_VertexDeclarations.h">
       <Filter>Library</Filter>
     </ClInclude>
+    <ClInclude Include="Common.h" />
   </ItemGroup>
   <ItemGroup>
     <Midl Include="MatMeshMod.idl" />
