@@ -9,10 +9,30 @@ namespace MatMeshMod
 	runtimeclass Mesh;
 	runtimeclass ModelMaterial;
 	
-	interface IModel;
-	interface IMesh;
-	interface IModelMaterial;
+	
+		interface IModel;
+		interface IMesh;
+		interface IModelMaterial;
+	
+	
+	declare
+	{
+		//interface Windows.Foundation.Collections.IVector<HSTRING>;
+		//interface Windows.Foundation.Collections.IObservableVector<HSTRING>;
+		//interface Windows.Foundation.Collections.IObservableVector<int>;
+	//interface Windows.Foundation.Collections.IObservableVector<IMyData *>;
+	//interface Windows.Foundation.Collections.IMap<HSTRING, IMyData *>;
+	//interface Windows.Foundation.Collections.IObservableMap<HSTRING, IMyData *>;
+	
+		interface Windows.Foundation.Collections.IVectorView<IMesh *>;
+		interface Windows.Foundation.Collections.IVectorView<IModelMaterial *>;
+		interface Windows.Foundation.Collections.IVectorView<IModel *>;
+		interface Windows.Foundation.Collections.IIterator<IMesh *>;
+		interface Windows.Foundation.Collections.IIterator<IModelMaterial *>;
+		interface Windows.Foundation.Collections.IIterator<IModel *>;
 
+
+	}
 
 	//f0cd5b84-e86e-4efb-a08a-437bd308f992
 	[version(1.0)]
@@ -22,8 +42,8 @@ namespace MatMeshMod
 		[propget] HRESULT HasMeshes([out, retval] boolean * hasMeshes);
 		[propget] HRESULT HasMaterials([out, retval] boolean * hasMaterials);
 		[propget] HRESULT HasAnimations([out, retval] boolean * hasAnimations);
-		[propget] HRESULT Meshes([out, retval] Windows.Foundation.Collections.IVectorView<IMesh> ** meshes);
-		[propget] HRESULT Materials([out, retval] Windows.Foundation.Collections.IVectorView<IModelMaterial> ** materials);
+		[propget] HRESULT Meshes([out, retval] Windows.Foundation.Collections.IVectorView<IMesh*> ** meshes);
+		[propget] HRESULT Materials([out, retval] Windows.Foundation.Collections.IVectorView<IModelMaterial*> ** materials);
 	}
 
 	[version(1.0)]
@@ -77,8 +97,8 @@ namespace MatMeshMod
 		[propget] HRESULT HasMaterials([out, retval] boolean * hasMaterials);
 		[propget] HRESULT HasAnimations([out, retval] boolean * hasAnimations);
 
-		[propget] HRESULT Meshes([out, retval] Windows.Foundation.Collections.IVectorView<IMesh> ** meshes);
-		[propget] HRESULT Materials([out, retval] Windows.Foundation.Collections.IVectorView<IModelMaterial> ** materials);
+		[propget] HRESULT Meshes([out, retval] Windows.Foundation.Collections.IVectorView<IMesh*> ** meshes);
+		[propget] HRESULT Materials([out, retval] Windows.Foundation.Collections.IVectorView<IModelMaterial*> ** materials);
 
 
 	}
@@ -105,4 +125,8 @@ namespace MatMeshMod
 	{
 		[default] interface IMesh;
 	}
+
+	
+
 }
+

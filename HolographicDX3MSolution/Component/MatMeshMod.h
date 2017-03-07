@@ -6,7 +6,7 @@
  /* File created by MIDL compiler version 8.01.0620 */
 /* at Mon Jan 18 22:14:07 2038
  */
-/* Compiler settings for C:\Users\dngoi\AppData\Local\Temp\MatMeshMod.idl-0b3fe013:
+/* Compiler settings for C:\Users\dngoins\AppData\Local\Temp\MatMeshMod.idl-d1f7f9fd:
     Oicf, W1, Zp8, env=Win32 (32b run), target_arch=X86 8.01.0620 
     protocol : dce , ms_ext, c_ext, robust
     error checks: allocation ref bounds_check enum stub_data 
@@ -85,6 +85,27 @@ typedef interface __FIIterable_1_MatMeshMod__CIModelMaterial __FIIterable_1_MatM
 typedef interface __FIVectorView_1_MatMeshMod__CIModelMaterial __FIVectorView_1_MatMeshMod__CIModelMaterial;
 
 #endif 	/* ____FIVectorView_1_MatMeshMod__CIModelMaterial_FWD_DEFINED__ */
+
+
+#ifndef ____FIIterator_1_MatMeshMod__CIModel_FWD_DEFINED__
+#define ____FIIterator_1_MatMeshMod__CIModel_FWD_DEFINED__
+typedef interface __FIIterator_1_MatMeshMod__CIModel __FIIterator_1_MatMeshMod__CIModel;
+
+#endif 	/* ____FIIterator_1_MatMeshMod__CIModel_FWD_DEFINED__ */
+
+
+#ifndef ____FIIterable_1_MatMeshMod__CIModel_FWD_DEFINED__
+#define ____FIIterable_1_MatMeshMod__CIModel_FWD_DEFINED__
+typedef interface __FIIterable_1_MatMeshMod__CIModel __FIIterable_1_MatMeshMod__CIModel;
+
+#endif 	/* ____FIIterable_1_MatMeshMod__CIModel_FWD_DEFINED__ */
+
+
+#ifndef ____FIVectorView_1_MatMeshMod__CIModel_FWD_DEFINED__
+#define ____FIVectorView_1_MatMeshMod__CIModel_FWD_DEFINED__
+typedef interface __FIVectorView_1_MatMeshMod__CIModel __FIVectorView_1_MatMeshMod__CIModel;
+
+#endif 	/* ____FIVectorView_1_MatMeshMod__CIModel_FWD_DEFINED__ */
 
 
 #ifndef ____x_ABI_CMatMeshMod_CIModel_FWD_DEFINED__
@@ -564,9 +585,18 @@ extern "C" {
 #endif //__cplusplus
 #endif /* DEF___FIVectorView_1_MatMeshMod__CIModelMaterial_USE */
 
+#ifdef __cplusplus
+namespace ABI {
+namespace MatMeshMod {
+interface IModel;
+} /*MatMeshMod*/
+}
+#endif
+
 
 /* interface __MIDL_itf_MatMeshMod_0000_0006 */
 /* [local] */ 
+
 
 
 
@@ -590,25 +620,25 @@ extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3112_v0_0_s_ifspec;
 /* interface __MIDL_itf_MatMeshMod_0000_0007 */
 /* [local] */ 
 
-#ifndef DEF___FIIterator_1_byte_USE
-#define DEF___FIIterator_1_byte_USE
+#ifndef DEF___FIIterator_1_MatMeshMod__CIModel_USE
+#define DEF___FIIterator_1_MatMeshMod__CIModel_USE
 #if defined(__cplusplus) && !defined(RO_NO_TEMPLATE_NAME)
 } /*extern "C"*/ 
 namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
 template <>
-struct __declspec(uuid("40556131-a2a1-5fab-aaee-5f35268ca26b"))
-IIterator<byte> : IIterator_impl<byte> {
+struct __declspec(uuid("ef9bf88d-fe54-5374-aea6-5f6c63c56d40"))
+IIterator<ABI::MatMeshMod::IModel*> : IIterator_impl<ABI::MatMeshMod::IModel*> {
 static const wchar_t* z_get_rc_name_impl() {
-return L"Windows.Foundation.Collections.IIterator`1<UInt8>"; }
+return L"Windows.Foundation.Collections.IIterator`1<MatMeshMod.IModel>"; }
 };
-typedef IIterator<byte> __FIIterator_1_byte_t;
-#define ____FIIterator_1_byte_FWD_DEFINED__
-#define __FIIterator_1_byte ABI::Windows::Foundation::Collections::__FIIterator_1_byte_t
+typedef IIterator<ABI::MatMeshMod::IModel*> __FIIterator_1_MatMeshMod__CIModel_t;
+#define ____FIIterator_1_MatMeshMod__CIModel_FWD_DEFINED__
+#define __FIIterator_1_MatMeshMod__CIModel ABI::Windows::Foundation::Collections::__FIIterator_1_MatMeshMod__CIModel_t
 
 /* ABI */ } /* Windows */ } /* Foundation */ } /* Collections */ }
 extern "C" {
 #endif //__cplusplus
-#endif /* DEF___FIIterator_1_byte_USE */
+#endif /* DEF___FIIterator_1_MatMeshMod__CIModel_USE */
 
 
 /* interface __MIDL_itf_MatMeshMod_0000_0007 */
@@ -636,25 +666,25 @@ extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3113_v0_0_s_ifspec;
 /* interface __MIDL_itf_MatMeshMod_0000_0008 */
 /* [local] */ 
 
-#ifndef DEF___FIIterable_1_byte_USE
-#define DEF___FIIterable_1_byte_USE
+#ifndef DEF___FIIterable_1_MatMeshMod__CIModel_USE
+#define DEF___FIIterable_1_MatMeshMod__CIModel_USE
 #if defined(__cplusplus) && !defined(RO_NO_TEMPLATE_NAME)
 } /*extern "C"*/ 
 namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
 template <>
-struct __declspec(uuid("88318266-f3fd-50fc-8f08-b823a41b60c1"))
-IIterable<byte> : IIterable_impl<byte> {
+struct __declspec(uuid("1a74a1db-a52e-5631-a35b-0ef9d054b592"))
+IIterable<ABI::MatMeshMod::IModel*> : IIterable_impl<ABI::MatMeshMod::IModel*> {
 static const wchar_t* z_get_rc_name_impl() {
-return L"Windows.Foundation.Collections.IIterable`1<UInt8>"; }
+return L"Windows.Foundation.Collections.IIterable`1<MatMeshMod.IModel>"; }
 };
-typedef IIterable<byte> __FIIterable_1_byte_t;
-#define ____FIIterable_1_byte_FWD_DEFINED__
-#define __FIIterable_1_byte ABI::Windows::Foundation::Collections::__FIIterable_1_byte_t
+typedef IIterable<ABI::MatMeshMod::IModel*> __FIIterable_1_MatMeshMod__CIModel_t;
+#define ____FIIterable_1_MatMeshMod__CIModel_FWD_DEFINED__
+#define __FIIterable_1_MatMeshMod__CIModel ABI::Windows::Foundation::Collections::__FIIterable_1_MatMeshMod__CIModel_t
 
 /* ABI */ } /* Windows */ } /* Foundation */ } /* Collections */ }
 extern "C" {
 #endif //__cplusplus
-#endif /* DEF___FIIterable_1_byte_USE */
+#endif /* DEF___FIIterable_1_MatMeshMod__CIModel_USE */
 
 
 /* interface __MIDL_itf_MatMeshMod_0000_0008 */
@@ -680,6 +710,144 @@ extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3114_v0_0_c_ifspec;
 extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3114_v0_0_s_ifspec;
 
 /* interface __MIDL_itf_MatMeshMod_0000_0009 */
+/* [local] */ 
+
+#ifndef DEF___FIVectorView_1_MatMeshMod__CIModel_USE
+#define DEF___FIVectorView_1_MatMeshMod__CIModel_USE
+#if defined(__cplusplus) && !defined(RO_NO_TEMPLATE_NAME)
+} /*extern "C"*/ 
+namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
+template <>
+struct __declspec(uuid("a9c28df6-90fb-5dbd-93cd-d7d024bb8f00"))
+IVectorView<ABI::MatMeshMod::IModel*> : IVectorView_impl<ABI::MatMeshMod::IModel*> {
+static const wchar_t* z_get_rc_name_impl() {
+return L"Windows.Foundation.Collections.IVectorView`1<MatMeshMod.IModel>"; }
+};
+typedef IVectorView<ABI::MatMeshMod::IModel*> __FIVectorView_1_MatMeshMod__CIModel_t;
+#define ____FIVectorView_1_MatMeshMod__CIModel_FWD_DEFINED__
+#define __FIVectorView_1_MatMeshMod__CIModel ABI::Windows::Foundation::Collections::__FIVectorView_1_MatMeshMod__CIModel_t
+
+/* ABI */ } /* Windows */ } /* Foundation */ } /* Collections */ }
+extern "C" {
+#endif //__cplusplus
+#endif /* DEF___FIVectorView_1_MatMeshMod__CIModel_USE */
+
+
+/* interface __MIDL_itf_MatMeshMod_0000_0009 */
+/* [local] */ 
+
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0009_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0009_v0_0_s_ifspec;
+
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3115 */
+
+
+
+
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3115 */
+
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3115_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3115_v0_0_s_ifspec;
+
+/* interface __MIDL_itf_MatMeshMod_0000_0010 */
+/* [local] */ 
+
+#ifndef DEF___FIIterator_1_byte_USE
+#define DEF___FIIterator_1_byte_USE
+#if defined(__cplusplus) && !defined(RO_NO_TEMPLATE_NAME)
+} /*extern "C"*/ 
+namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
+template <>
+struct __declspec(uuid("40556131-a2a1-5fab-aaee-5f35268ca26b"))
+IIterator<byte> : IIterator_impl<byte> {
+static const wchar_t* z_get_rc_name_impl() {
+return L"Windows.Foundation.Collections.IIterator`1<UInt8>"; }
+};
+typedef IIterator<byte> __FIIterator_1_byte_t;
+#define ____FIIterator_1_byte_FWD_DEFINED__
+#define __FIIterator_1_byte ABI::Windows::Foundation::Collections::__FIIterator_1_byte_t
+
+/* ABI */ } /* Windows */ } /* Foundation */ } /* Collections */ }
+extern "C" {
+#endif //__cplusplus
+#endif /* DEF___FIIterator_1_byte_USE */
+
+
+/* interface __MIDL_itf_MatMeshMod_0000_0010 */
+/* [local] */ 
+
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0010_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0010_v0_0_s_ifspec;
+
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3116 */
+
+
+
+
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3116 */
+
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3116_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3116_v0_0_s_ifspec;
+
+/* interface __MIDL_itf_MatMeshMod_0000_0011 */
+/* [local] */ 
+
+#ifndef DEF___FIIterable_1_byte_USE
+#define DEF___FIIterable_1_byte_USE
+#if defined(__cplusplus) && !defined(RO_NO_TEMPLATE_NAME)
+} /*extern "C"*/ 
+namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
+template <>
+struct __declspec(uuid("88318266-f3fd-50fc-8f08-b823a41b60c1"))
+IIterable<byte> : IIterable_impl<byte> {
+static const wchar_t* z_get_rc_name_impl() {
+return L"Windows.Foundation.Collections.IIterable`1<UInt8>"; }
+};
+typedef IIterable<byte> __FIIterable_1_byte_t;
+#define ____FIIterable_1_byte_FWD_DEFINED__
+#define __FIIterable_1_byte ABI::Windows::Foundation::Collections::__FIIterable_1_byte_t
+
+/* ABI */ } /* Windows */ } /* Foundation */ } /* Collections */ }
+extern "C" {
+#endif //__cplusplus
+#endif /* DEF___FIIterable_1_byte_USE */
+
+
+/* interface __MIDL_itf_MatMeshMod_0000_0011 */
+/* [local] */ 
+
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0011_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0011_v0_0_s_ifspec;
+
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3117 */
+
+
+
+
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3117 */
+
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3117_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3117_v0_0_s_ifspec;
+
+/* interface __MIDL_itf_MatMeshMod_0000_0012 */
 /* [local] */ 
 
 #ifndef DEF___FIVectorView_1_byte_USE
@@ -715,147 +883,9 @@ struct Vector3;
 #endif
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0009 */
-/* [local] */ 
-
-
-
-
-
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0009_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0009_v0_0_s_ifspec;
-
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3115 */
-
-
-
-
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3115 */
-
-
-
-
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3115_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3115_v0_0_s_ifspec;
-
-/* interface __MIDL_itf_MatMeshMod_0000_0010 */
-/* [local] */ 
-
-#ifndef DEF___FIIterator_1_Windows__CFoundation__CNumerics__CVector3_USE
-#define DEF___FIIterator_1_Windows__CFoundation__CNumerics__CVector3_USE
-#if defined(__cplusplus) && !defined(RO_NO_TEMPLATE_NAME)
-} /*extern "C"*/ 
-namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
-template <>
-struct __declspec(uuid("e107793e-538c-5cc6-8ce6-1802e91b9ba5"))
-IIterator<struct ABI::Windows::Foundation::Numerics::Vector3> : IIterator_impl<struct ABI::Windows::Foundation::Numerics::Vector3> {
-static const wchar_t* z_get_rc_name_impl() {
-return L"Windows.Foundation.Collections.IIterator`1<Windows.Foundation.Numerics.Vector3>"; }
-};
-typedef IIterator<struct ABI::Windows::Foundation::Numerics::Vector3> __FIIterator_1_Windows__CFoundation__CNumerics__CVector3_t;
-#define ____FIIterator_1_Windows__CFoundation__CNumerics__CVector3_FWD_DEFINED__
-#define __FIIterator_1_Windows__CFoundation__CNumerics__CVector3 ABI::Windows::Foundation::Collections::__FIIterator_1_Windows__CFoundation__CNumerics__CVector3_t
-
-/* ABI */ } /* Windows */ } /* Foundation */ } /* Collections */ }
-extern "C" {
-#endif //__cplusplus
-#endif /* DEF___FIIterator_1_Windows__CFoundation__CNumerics__CVector3_USE */
-
-
-/* interface __MIDL_itf_MatMeshMod_0000_0010 */
-/* [local] */ 
-
-
-
-
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0010_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0010_v0_0_s_ifspec;
-
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3116 */
-
-
-
-
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3116 */
-
-
-
-
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3116_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3116_v0_0_s_ifspec;
-
-/* interface __MIDL_itf_MatMeshMod_0000_0011 */
-/* [local] */ 
-
-#ifndef DEF___FIIterable_1_Windows__CFoundation__CNumerics__CVector3_USE
-#define DEF___FIIterable_1_Windows__CFoundation__CNumerics__CVector3_USE
-#if defined(__cplusplus) && !defined(RO_NO_TEMPLATE_NAME)
-} /*extern "C"*/ 
-namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
-template <>
-struct __declspec(uuid("f89aa9d0-2b80-506f-85f7-757b90413a52"))
-IIterable<struct ABI::Windows::Foundation::Numerics::Vector3> : IIterable_impl<struct ABI::Windows::Foundation::Numerics::Vector3> {
-static const wchar_t* z_get_rc_name_impl() {
-return L"Windows.Foundation.Collections.IIterable`1<Windows.Foundation.Numerics.Vector3>"; }
-};
-typedef IIterable<struct ABI::Windows::Foundation::Numerics::Vector3> __FIIterable_1_Windows__CFoundation__CNumerics__CVector3_t;
-#define ____FIIterable_1_Windows__CFoundation__CNumerics__CVector3_FWD_DEFINED__
-#define __FIIterable_1_Windows__CFoundation__CNumerics__CVector3 ABI::Windows::Foundation::Collections::__FIIterable_1_Windows__CFoundation__CNumerics__CVector3_t
-
-/* ABI */ } /* Windows */ } /* Foundation */ } /* Collections */ }
-extern "C" {
-#endif //__cplusplus
-#endif /* DEF___FIIterable_1_Windows__CFoundation__CNumerics__CVector3_USE */
-
-
-/* interface __MIDL_itf_MatMeshMod_0000_0011 */
-/* [local] */ 
-
-
-
-
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0011_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0011_v0_0_s_ifspec;
-
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3117 */
-
-
-
-
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3117 */
-
-
-
-
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3117_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3117_v0_0_s_ifspec;
-
 /* interface __MIDL_itf_MatMeshMod_0000_0012 */
 /* [local] */ 
 
-#ifndef DEF___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_USE
-#define DEF___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_USE
-#if defined(__cplusplus) && !defined(RO_NO_TEMPLATE_NAME)
-} /*extern "C"*/ 
-namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
-template <>
-struct __declspec(uuid("3040460a-395b-5662-9da2-0cba2c9d9ad1"))
-IVectorView<struct ABI::Windows::Foundation::Numerics::Vector3> : IVectorView_impl<struct ABI::Windows::Foundation::Numerics::Vector3> {
-static const wchar_t* z_get_rc_name_impl() {
-return L"Windows.Foundation.Collections.IVectorView`1<Windows.Foundation.Numerics.Vector3>"; }
-};
-typedef IVectorView<struct ABI::Windows::Foundation::Numerics::Vector3> __FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_t;
-#define ____FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_FWD_DEFINED__
-#define __FIVectorView_1_Windows__CFoundation__CNumerics__CVector3 ABI::Windows::Foundation::Collections::__FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_t
-
-/* ABI */ } /* Windows */ } /* Foundation */ } /* Collections */ }
-extern "C" {
-#endif //__cplusplus
-#endif /* DEF___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_USE */
-
-
-/* interface __MIDL_itf_MatMeshMod_0000_0012 */
-/* [local] */ 
 
 
 
@@ -879,25 +909,25 @@ extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3118_v0_0_s_ifspec;
 /* interface __MIDL_itf_MatMeshMod_0000_0013 */
 /* [local] */ 
 
-#ifndef DEF___FIIterator_1___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_USE
-#define DEF___FIIterator_1___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_USE
+#ifndef DEF___FIIterator_1_Windows__CFoundation__CNumerics__CVector3_USE
+#define DEF___FIIterator_1_Windows__CFoundation__CNumerics__CVector3_USE
 #if defined(__cplusplus) && !defined(RO_NO_TEMPLATE_NAME)
 } /*extern "C"*/ 
 namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
 template <>
-struct __declspec(uuid("40deb5ad-f225-55e1-a754-e9bb515455f6"))
-IIterator<__FIVectorView_1_Windows__CFoundation__CNumerics__CVector3*> : IIterator_impl<__FIVectorView_1_Windows__CFoundation__CNumerics__CVector3*> {
+struct __declspec(uuid("e107793e-538c-5cc6-8ce6-1802e91b9ba5"))
+IIterator<struct ABI::Windows::Foundation::Numerics::Vector3> : IIterator_impl<struct ABI::Windows::Foundation::Numerics::Vector3> {
 static const wchar_t* z_get_rc_name_impl() {
-return L"Windows.Foundation.Collections.IIterator`1<Windows.Foundation.Collections.IVectorView`1<Windows.Foundation.Numerics.Vector3>>"; }
+return L"Windows.Foundation.Collections.IIterator`1<Windows.Foundation.Numerics.Vector3>"; }
 };
-typedef IIterator<__FIVectorView_1_Windows__CFoundation__CNumerics__CVector3*> __FIIterator_1___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_t;
-#define ____FIIterator_1___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_FWD_DEFINED__
-#define __FIIterator_1___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3 ABI::Windows::Foundation::Collections::__FIIterator_1___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_t
+typedef IIterator<struct ABI::Windows::Foundation::Numerics::Vector3> __FIIterator_1_Windows__CFoundation__CNumerics__CVector3_t;
+#define ____FIIterator_1_Windows__CFoundation__CNumerics__CVector3_FWD_DEFINED__
+#define __FIIterator_1_Windows__CFoundation__CNumerics__CVector3 ABI::Windows::Foundation::Collections::__FIIterator_1_Windows__CFoundation__CNumerics__CVector3_t
 
 /* ABI */ } /* Windows */ } /* Foundation */ } /* Collections */ }
 extern "C" {
 #endif //__cplusplus
-#endif /* DEF___FIIterator_1___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_USE */
+#endif /* DEF___FIIterator_1_Windows__CFoundation__CNumerics__CVector3_USE */
 
 
 /* interface __MIDL_itf_MatMeshMod_0000_0013 */
@@ -925,25 +955,25 @@ extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3119_v0_0_s_ifspec;
 /* interface __MIDL_itf_MatMeshMod_0000_0014 */
 /* [local] */ 
 
-#ifndef DEF___FIIterable_1___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_USE
-#define DEF___FIIterable_1___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_USE
+#ifndef DEF___FIIterable_1_Windows__CFoundation__CNumerics__CVector3_USE
+#define DEF___FIIterable_1_Windows__CFoundation__CNumerics__CVector3_USE
 #if defined(__cplusplus) && !defined(RO_NO_TEMPLATE_NAME)
 } /*extern "C"*/ 
 namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
 template <>
-struct __declspec(uuid("727d7974-d7f6-5b6f-831b-7f2b091b1639"))
-IIterable<__FIVectorView_1_Windows__CFoundation__CNumerics__CVector3*> : IIterable_impl<__FIVectorView_1_Windows__CFoundation__CNumerics__CVector3*> {
+struct __declspec(uuid("f89aa9d0-2b80-506f-85f7-757b90413a52"))
+IIterable<struct ABI::Windows::Foundation::Numerics::Vector3> : IIterable_impl<struct ABI::Windows::Foundation::Numerics::Vector3> {
 static const wchar_t* z_get_rc_name_impl() {
-return L"Windows.Foundation.Collections.IIterable`1<Windows.Foundation.Collections.IVectorView`1<Windows.Foundation.Numerics.Vector3>>"; }
+return L"Windows.Foundation.Collections.IIterable`1<Windows.Foundation.Numerics.Vector3>"; }
 };
-typedef IIterable<__FIVectorView_1_Windows__CFoundation__CNumerics__CVector3*> __FIIterable_1___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_t;
-#define ____FIIterable_1___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_FWD_DEFINED__
-#define __FIIterable_1___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3 ABI::Windows::Foundation::Collections::__FIIterable_1___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_t
+typedef IIterable<struct ABI::Windows::Foundation::Numerics::Vector3> __FIIterable_1_Windows__CFoundation__CNumerics__CVector3_t;
+#define ____FIIterable_1_Windows__CFoundation__CNumerics__CVector3_FWD_DEFINED__
+#define __FIIterable_1_Windows__CFoundation__CNumerics__CVector3 ABI::Windows::Foundation::Collections::__FIIterable_1_Windows__CFoundation__CNumerics__CVector3_t
 
 /* ABI */ } /* Windows */ } /* Foundation */ } /* Collections */ }
 extern "C" {
 #endif //__cplusplus
-#endif /* DEF___FIIterable_1___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_USE */
+#endif /* DEF___FIIterable_1_Windows__CFoundation__CNumerics__CVector3_USE */
 
 
 /* interface __MIDL_itf_MatMeshMod_0000_0014 */
@@ -969,6 +999,144 @@ extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3120_v0_0_c_ifspec;
 extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3120_v0_0_s_ifspec;
 
 /* interface __MIDL_itf_MatMeshMod_0000_0015 */
+/* [local] */ 
+
+#ifndef DEF___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_USE
+#define DEF___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_USE
+#if defined(__cplusplus) && !defined(RO_NO_TEMPLATE_NAME)
+} /*extern "C"*/ 
+namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
+template <>
+struct __declspec(uuid("3040460a-395b-5662-9da2-0cba2c9d9ad1"))
+IVectorView<struct ABI::Windows::Foundation::Numerics::Vector3> : IVectorView_impl<struct ABI::Windows::Foundation::Numerics::Vector3> {
+static const wchar_t* z_get_rc_name_impl() {
+return L"Windows.Foundation.Collections.IVectorView`1<Windows.Foundation.Numerics.Vector3>"; }
+};
+typedef IVectorView<struct ABI::Windows::Foundation::Numerics::Vector3> __FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_t;
+#define ____FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_FWD_DEFINED__
+#define __FIVectorView_1_Windows__CFoundation__CNumerics__CVector3 ABI::Windows::Foundation::Collections::__FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_t
+
+/* ABI */ } /* Windows */ } /* Foundation */ } /* Collections */ }
+extern "C" {
+#endif //__cplusplus
+#endif /* DEF___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_USE */
+
+
+/* interface __MIDL_itf_MatMeshMod_0000_0015 */
+/* [local] */ 
+
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0015_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0015_v0_0_s_ifspec;
+
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3121 */
+
+
+
+
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3121 */
+
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3121_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3121_v0_0_s_ifspec;
+
+/* interface __MIDL_itf_MatMeshMod_0000_0016 */
+/* [local] */ 
+
+#ifndef DEF___FIIterator_1___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_USE
+#define DEF___FIIterator_1___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_USE
+#if defined(__cplusplus) && !defined(RO_NO_TEMPLATE_NAME)
+} /*extern "C"*/ 
+namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
+template <>
+struct __declspec(uuid("40deb5ad-f225-55e1-a754-e9bb515455f6"))
+IIterator<__FIVectorView_1_Windows__CFoundation__CNumerics__CVector3*> : IIterator_impl<__FIVectorView_1_Windows__CFoundation__CNumerics__CVector3*> {
+static const wchar_t* z_get_rc_name_impl() {
+return L"Windows.Foundation.Collections.IIterator`1<Windows.Foundation.Collections.IVectorView`1<Windows.Foundation.Numerics.Vector3>>"; }
+};
+typedef IIterator<__FIVectorView_1_Windows__CFoundation__CNumerics__CVector3*> __FIIterator_1___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_t;
+#define ____FIIterator_1___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_FWD_DEFINED__
+#define __FIIterator_1___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3 ABI::Windows::Foundation::Collections::__FIIterator_1___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_t
+
+/* ABI */ } /* Windows */ } /* Foundation */ } /* Collections */ }
+extern "C" {
+#endif //__cplusplus
+#endif /* DEF___FIIterator_1___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_USE */
+
+
+/* interface __MIDL_itf_MatMeshMod_0000_0016 */
+/* [local] */ 
+
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0016_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0016_v0_0_s_ifspec;
+
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3122 */
+
+
+
+
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3122 */
+
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3122_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3122_v0_0_s_ifspec;
+
+/* interface __MIDL_itf_MatMeshMod_0000_0017 */
+/* [local] */ 
+
+#ifndef DEF___FIIterable_1___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_USE
+#define DEF___FIIterable_1___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_USE
+#if defined(__cplusplus) && !defined(RO_NO_TEMPLATE_NAME)
+} /*extern "C"*/ 
+namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
+template <>
+struct __declspec(uuid("727d7974-d7f6-5b6f-831b-7f2b091b1639"))
+IIterable<__FIVectorView_1_Windows__CFoundation__CNumerics__CVector3*> : IIterable_impl<__FIVectorView_1_Windows__CFoundation__CNumerics__CVector3*> {
+static const wchar_t* z_get_rc_name_impl() {
+return L"Windows.Foundation.Collections.IIterable`1<Windows.Foundation.Collections.IVectorView`1<Windows.Foundation.Numerics.Vector3>>"; }
+};
+typedef IIterable<__FIVectorView_1_Windows__CFoundation__CNumerics__CVector3*> __FIIterable_1___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_t;
+#define ____FIIterable_1___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_FWD_DEFINED__
+#define __FIIterable_1___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3 ABI::Windows::Foundation::Collections::__FIIterable_1___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_t
+
+/* ABI */ } /* Windows */ } /* Foundation */ } /* Collections */ }
+extern "C" {
+#endif //__cplusplus
+#endif /* DEF___FIIterable_1___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_USE */
+
+
+/* interface __MIDL_itf_MatMeshMod_0000_0017 */
+/* [local] */ 
+
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0017_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0017_v0_0_s_ifspec;
+
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3123 */
+
+
+
+
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3123 */
+
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3123_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3123_v0_0_s_ifspec;
+
+/* interface __MIDL_itf_MatMeshMod_0000_0018 */
 /* [local] */ 
 
 #ifndef DEF___FIVectorView_1___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_USE
@@ -1004,147 +1172,9 @@ struct Quaternion;
 #endif
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0015 */
-/* [local] */ 
-
-
-
-
-
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0015_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0015_v0_0_s_ifspec;
-
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3121 */
-
-
-
-
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3121 */
-
-
-
-
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3121_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3121_v0_0_s_ifspec;
-
-/* interface __MIDL_itf_MatMeshMod_0000_0016 */
-/* [local] */ 
-
-#ifndef DEF___FIIterator_1_Windows__CFoundation__CNumerics__CQuaternion_USE
-#define DEF___FIIterator_1_Windows__CFoundation__CNumerics__CQuaternion_USE
-#if defined(__cplusplus) && !defined(RO_NO_TEMPLATE_NAME)
-} /*extern "C"*/ 
-namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
-template <>
-struct __declspec(uuid("3d11f83c-e516-5fbc-96f9-be9330bedb0a"))
-IIterator<struct ABI::Windows::Foundation::Numerics::Quaternion> : IIterator_impl<struct ABI::Windows::Foundation::Numerics::Quaternion> {
-static const wchar_t* z_get_rc_name_impl() {
-return L"Windows.Foundation.Collections.IIterator`1<Windows.Foundation.Numerics.Quaternion>"; }
-};
-typedef IIterator<struct ABI::Windows::Foundation::Numerics::Quaternion> __FIIterator_1_Windows__CFoundation__CNumerics__CQuaternion_t;
-#define ____FIIterator_1_Windows__CFoundation__CNumerics__CQuaternion_FWD_DEFINED__
-#define __FIIterator_1_Windows__CFoundation__CNumerics__CQuaternion ABI::Windows::Foundation::Collections::__FIIterator_1_Windows__CFoundation__CNumerics__CQuaternion_t
-
-/* ABI */ } /* Windows */ } /* Foundation */ } /* Collections */ }
-extern "C" {
-#endif //__cplusplus
-#endif /* DEF___FIIterator_1_Windows__CFoundation__CNumerics__CQuaternion_USE */
-
-
-/* interface __MIDL_itf_MatMeshMod_0000_0016 */
-/* [local] */ 
-
-
-
-
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0016_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0016_v0_0_s_ifspec;
-
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3122 */
-
-
-
-
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3122 */
-
-
-
-
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3122_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3122_v0_0_s_ifspec;
-
-/* interface __MIDL_itf_MatMeshMod_0000_0017 */
-/* [local] */ 
-
-#ifndef DEF___FIIterable_1_Windows__CFoundation__CNumerics__CQuaternion_USE
-#define DEF___FIIterable_1_Windows__CFoundation__CNumerics__CQuaternion_USE
-#if defined(__cplusplus) && !defined(RO_NO_TEMPLATE_NAME)
-} /*extern "C"*/ 
-namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
-template <>
-struct __declspec(uuid("f4def91a-2386-5064-af03-5771cab12a39"))
-IIterable<struct ABI::Windows::Foundation::Numerics::Quaternion> : IIterable_impl<struct ABI::Windows::Foundation::Numerics::Quaternion> {
-static const wchar_t* z_get_rc_name_impl() {
-return L"Windows.Foundation.Collections.IIterable`1<Windows.Foundation.Numerics.Quaternion>"; }
-};
-typedef IIterable<struct ABI::Windows::Foundation::Numerics::Quaternion> __FIIterable_1_Windows__CFoundation__CNumerics__CQuaternion_t;
-#define ____FIIterable_1_Windows__CFoundation__CNumerics__CQuaternion_FWD_DEFINED__
-#define __FIIterable_1_Windows__CFoundation__CNumerics__CQuaternion ABI::Windows::Foundation::Collections::__FIIterable_1_Windows__CFoundation__CNumerics__CQuaternion_t
-
-/* ABI */ } /* Windows */ } /* Foundation */ } /* Collections */ }
-extern "C" {
-#endif //__cplusplus
-#endif /* DEF___FIIterable_1_Windows__CFoundation__CNumerics__CQuaternion_USE */
-
-
-/* interface __MIDL_itf_MatMeshMod_0000_0017 */
-/* [local] */ 
-
-
-
-
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0017_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0017_v0_0_s_ifspec;
-
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3123 */
-
-
-
-
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3123 */
-
-
-
-
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3123_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3123_v0_0_s_ifspec;
-
 /* interface __MIDL_itf_MatMeshMod_0000_0018 */
 /* [local] */ 
 
-#ifndef DEF___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_USE
-#define DEF___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_USE
-#if defined(__cplusplus) && !defined(RO_NO_TEMPLATE_NAME)
-} /*extern "C"*/ 
-namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
-template <>
-struct __declspec(uuid("2772d7a0-b9c1-575e-9b6f-cefa25843609"))
-IVectorView<struct ABI::Windows::Foundation::Numerics::Quaternion> : IVectorView_impl<struct ABI::Windows::Foundation::Numerics::Quaternion> {
-static const wchar_t* z_get_rc_name_impl() {
-return L"Windows.Foundation.Collections.IVectorView`1<Windows.Foundation.Numerics.Quaternion>"; }
-};
-typedef IVectorView<struct ABI::Windows::Foundation::Numerics::Quaternion> __FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_t;
-#define ____FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_FWD_DEFINED__
-#define __FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion ABI::Windows::Foundation::Collections::__FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_t
-
-/* ABI */ } /* Windows */ } /* Foundation */ } /* Collections */ }
-extern "C" {
-#endif //__cplusplus
-#endif /* DEF___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_USE */
-
-
-/* interface __MIDL_itf_MatMeshMod_0000_0018 */
-/* [local] */ 
 
 
 
@@ -1168,25 +1198,25 @@ extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3124_v0_0_s_ifspec;
 /* interface __MIDL_itf_MatMeshMod_0000_0019 */
 /* [local] */ 
 
-#ifndef DEF___FIIterator_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_USE
-#define DEF___FIIterator_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_USE
+#ifndef DEF___FIIterator_1_Windows__CFoundation__CNumerics__CQuaternion_USE
+#define DEF___FIIterator_1_Windows__CFoundation__CNumerics__CQuaternion_USE
 #if defined(__cplusplus) && !defined(RO_NO_TEMPLATE_NAME)
 } /*extern "C"*/ 
 namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
 template <>
-struct __declspec(uuid("397922a1-19cf-50bc-95ab-774d40d8cf4a"))
-IIterator<__FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion*> : IIterator_impl<__FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion*> {
+struct __declspec(uuid("3d11f83c-e516-5fbc-96f9-be9330bedb0a"))
+IIterator<struct ABI::Windows::Foundation::Numerics::Quaternion> : IIterator_impl<struct ABI::Windows::Foundation::Numerics::Quaternion> {
 static const wchar_t* z_get_rc_name_impl() {
-return L"Windows.Foundation.Collections.IIterator`1<Windows.Foundation.Collections.IVectorView`1<Windows.Foundation.Numerics.Quaternion>>"; }
+return L"Windows.Foundation.Collections.IIterator`1<Windows.Foundation.Numerics.Quaternion>"; }
 };
-typedef IIterator<__FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion*> __FIIterator_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_t;
-#define ____FIIterator_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_FWD_DEFINED__
-#define __FIIterator_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion ABI::Windows::Foundation::Collections::__FIIterator_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_t
+typedef IIterator<struct ABI::Windows::Foundation::Numerics::Quaternion> __FIIterator_1_Windows__CFoundation__CNumerics__CQuaternion_t;
+#define ____FIIterator_1_Windows__CFoundation__CNumerics__CQuaternion_FWD_DEFINED__
+#define __FIIterator_1_Windows__CFoundation__CNumerics__CQuaternion ABI::Windows::Foundation::Collections::__FIIterator_1_Windows__CFoundation__CNumerics__CQuaternion_t
 
 /* ABI */ } /* Windows */ } /* Foundation */ } /* Collections */ }
 extern "C" {
 #endif //__cplusplus
-#endif /* DEF___FIIterator_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_USE */
+#endif /* DEF___FIIterator_1_Windows__CFoundation__CNumerics__CQuaternion_USE */
 
 
 /* interface __MIDL_itf_MatMeshMod_0000_0019 */
@@ -1214,25 +1244,25 @@ extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3125_v0_0_s_ifspec;
 /* interface __MIDL_itf_MatMeshMod_0000_0020 */
 /* [local] */ 
 
-#ifndef DEF___FIIterable_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_USE
-#define DEF___FIIterable_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_USE
+#ifndef DEF___FIIterable_1_Windows__CFoundation__CNumerics__CQuaternion_USE
+#define DEF___FIIterable_1_Windows__CFoundation__CNumerics__CQuaternion_USE
 #if defined(__cplusplus) && !defined(RO_NO_TEMPLATE_NAME)
 } /*extern "C"*/ 
 namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
 template <>
-struct __declspec(uuid("97a929b7-6512-51f0-9ef1-4d7568ab38a1"))
-IIterable<__FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion*> : IIterable_impl<__FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion*> {
+struct __declspec(uuid("f4def91a-2386-5064-af03-5771cab12a39"))
+IIterable<struct ABI::Windows::Foundation::Numerics::Quaternion> : IIterable_impl<struct ABI::Windows::Foundation::Numerics::Quaternion> {
 static const wchar_t* z_get_rc_name_impl() {
-return L"Windows.Foundation.Collections.IIterable`1<Windows.Foundation.Collections.IVectorView`1<Windows.Foundation.Numerics.Quaternion>>"; }
+return L"Windows.Foundation.Collections.IIterable`1<Windows.Foundation.Numerics.Quaternion>"; }
 };
-typedef IIterable<__FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion*> __FIIterable_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_t;
-#define ____FIIterable_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_FWD_DEFINED__
-#define __FIIterable_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion ABI::Windows::Foundation::Collections::__FIIterable_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_t
+typedef IIterable<struct ABI::Windows::Foundation::Numerics::Quaternion> __FIIterable_1_Windows__CFoundation__CNumerics__CQuaternion_t;
+#define ____FIIterable_1_Windows__CFoundation__CNumerics__CQuaternion_FWD_DEFINED__
+#define __FIIterable_1_Windows__CFoundation__CNumerics__CQuaternion ABI::Windows::Foundation::Collections::__FIIterable_1_Windows__CFoundation__CNumerics__CQuaternion_t
 
 /* ABI */ } /* Windows */ } /* Foundation */ } /* Collections */ }
 extern "C" {
 #endif //__cplusplus
-#endif /* DEF___FIIterable_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_USE */
+#endif /* DEF___FIIterable_1_Windows__CFoundation__CNumerics__CQuaternion_USE */
 
 
 /* interface __MIDL_itf_MatMeshMod_0000_0020 */
@@ -1260,25 +1290,25 @@ extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3126_v0_0_s_ifspec;
 /* interface __MIDL_itf_MatMeshMod_0000_0021 */
 /* [local] */ 
 
-#ifndef DEF___FIVectorView_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_USE
-#define DEF___FIVectorView_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_USE
+#ifndef DEF___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_USE
+#define DEF___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_USE
 #if defined(__cplusplus) && !defined(RO_NO_TEMPLATE_NAME)
 } /*extern "C"*/ 
 namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
 template <>
-struct __declspec(uuid("2040f7a8-d95d-5301-9c9d-f150b60516b8"))
-IVectorView<__FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion*> : IVectorView_impl<__FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion*> {
+struct __declspec(uuid("2772d7a0-b9c1-575e-9b6f-cefa25843609"))
+IVectorView<struct ABI::Windows::Foundation::Numerics::Quaternion> : IVectorView_impl<struct ABI::Windows::Foundation::Numerics::Quaternion> {
 static const wchar_t* z_get_rc_name_impl() {
-return L"Windows.Foundation.Collections.IVectorView`1<Windows.Foundation.Collections.IVectorView`1<Windows.Foundation.Numerics.Quaternion>>"; }
+return L"Windows.Foundation.Collections.IVectorView`1<Windows.Foundation.Numerics.Quaternion>"; }
 };
-typedef IVectorView<__FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion*> __FIVectorView_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_t;
-#define ____FIVectorView_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_FWD_DEFINED__
-#define __FIVectorView_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion ABI::Windows::Foundation::Collections::__FIVectorView_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_t
+typedef IVectorView<struct ABI::Windows::Foundation::Numerics::Quaternion> __FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_t;
+#define ____FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_FWD_DEFINED__
+#define __FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion ABI::Windows::Foundation::Collections::__FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_t
 
 /* ABI */ } /* Windows */ } /* Foundation */ } /* Collections */ }
 extern "C" {
 #endif //__cplusplus
-#endif /* DEF___FIVectorView_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_USE */
+#endif /* DEF___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_USE */
 
 
 /* interface __MIDL_itf_MatMeshMod_0000_0021 */
@@ -1306,25 +1336,25 @@ extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3127_v0_0_s_ifspec;
 /* interface __MIDL_itf_MatMeshMod_0000_0022 */
 /* [local] */ 
 
-#ifndef DEF___FIIterator_1_UINT32_USE
-#define DEF___FIIterator_1_UINT32_USE
+#ifndef DEF___FIIterator_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_USE
+#define DEF___FIIterator_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_USE
 #if defined(__cplusplus) && !defined(RO_NO_TEMPLATE_NAME)
 } /*extern "C"*/ 
 namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
 template <>
-struct __declspec(uuid("f06a2739-9443-5ef0-b284-dc5aff3e7d10"))
-IIterator<UINT32> : IIterator_impl<UINT32> {
+struct __declspec(uuid("397922a1-19cf-50bc-95ab-774d40d8cf4a"))
+IIterator<__FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion*> : IIterator_impl<__FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion*> {
 static const wchar_t* z_get_rc_name_impl() {
-return L"Windows.Foundation.Collections.IIterator`1<UInt32>"; }
+return L"Windows.Foundation.Collections.IIterator`1<Windows.Foundation.Collections.IVectorView`1<Windows.Foundation.Numerics.Quaternion>>"; }
 };
-typedef IIterator<UINT32> __FIIterator_1_UINT32_t;
-#define ____FIIterator_1_UINT32_FWD_DEFINED__
-#define __FIIterator_1_UINT32 ABI::Windows::Foundation::Collections::__FIIterator_1_UINT32_t
+typedef IIterator<__FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion*> __FIIterator_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_t;
+#define ____FIIterator_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_FWD_DEFINED__
+#define __FIIterator_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion ABI::Windows::Foundation::Collections::__FIIterator_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_t
 
 /* ABI */ } /* Windows */ } /* Foundation */ } /* Collections */ }
 extern "C" {
 #endif //__cplusplus
-#endif /* DEF___FIIterator_1_UINT32_USE */
+#endif /* DEF___FIIterator_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_USE */
 
 
 /* interface __MIDL_itf_MatMeshMod_0000_0022 */
@@ -1352,25 +1382,25 @@ extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3128_v0_0_s_ifspec;
 /* interface __MIDL_itf_MatMeshMod_0000_0023 */
 /* [local] */ 
 
-#ifndef DEF___FIIterable_1_UINT32_USE
-#define DEF___FIIterable_1_UINT32_USE
+#ifndef DEF___FIIterable_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_USE
+#define DEF___FIIterable_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_USE
 #if defined(__cplusplus) && !defined(RO_NO_TEMPLATE_NAME)
 } /*extern "C"*/ 
 namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
 template <>
-struct __declspec(uuid("421d4b91-b13b-5f37-ae54-b5249bd80539"))
-IIterable<UINT32> : IIterable_impl<UINT32> {
+struct __declspec(uuid("97a929b7-6512-51f0-9ef1-4d7568ab38a1"))
+IIterable<__FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion*> : IIterable_impl<__FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion*> {
 static const wchar_t* z_get_rc_name_impl() {
-return L"Windows.Foundation.Collections.IIterable`1<UInt32>"; }
+return L"Windows.Foundation.Collections.IIterable`1<Windows.Foundation.Collections.IVectorView`1<Windows.Foundation.Numerics.Quaternion>>"; }
 };
-typedef IIterable<UINT32> __FIIterable_1_UINT32_t;
-#define ____FIIterable_1_UINT32_FWD_DEFINED__
-#define __FIIterable_1_UINT32 ABI::Windows::Foundation::Collections::__FIIterable_1_UINT32_t
+typedef IIterable<__FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion*> __FIIterable_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_t;
+#define ____FIIterable_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_FWD_DEFINED__
+#define __FIIterable_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion ABI::Windows::Foundation::Collections::__FIIterable_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_t
 
 /* ABI */ } /* Windows */ } /* Foundation */ } /* Collections */ }
 extern "C" {
 #endif //__cplusplus
-#endif /* DEF___FIIterable_1_UINT32_USE */
+#endif /* DEF___FIIterable_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_USE */
 
 
 /* interface __MIDL_itf_MatMeshMod_0000_0023 */
@@ -1396,6 +1426,144 @@ extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3129_v0_0_c_ifspec;
 extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3129_v0_0_s_ifspec;
 
 /* interface __MIDL_itf_MatMeshMod_0000_0024 */
+/* [local] */ 
+
+#ifndef DEF___FIVectorView_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_USE
+#define DEF___FIVectorView_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_USE
+#if defined(__cplusplus) && !defined(RO_NO_TEMPLATE_NAME)
+} /*extern "C"*/ 
+namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
+template <>
+struct __declspec(uuid("2040f7a8-d95d-5301-9c9d-f150b60516b8"))
+IVectorView<__FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion*> : IVectorView_impl<__FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion*> {
+static const wchar_t* z_get_rc_name_impl() {
+return L"Windows.Foundation.Collections.IVectorView`1<Windows.Foundation.Collections.IVectorView`1<Windows.Foundation.Numerics.Quaternion>>"; }
+};
+typedef IVectorView<__FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion*> __FIVectorView_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_t;
+#define ____FIVectorView_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_FWD_DEFINED__
+#define __FIVectorView_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion ABI::Windows::Foundation::Collections::__FIVectorView_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_t
+
+/* ABI */ } /* Windows */ } /* Foundation */ } /* Collections */ }
+extern "C" {
+#endif //__cplusplus
+#endif /* DEF___FIVectorView_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_USE */
+
+
+/* interface __MIDL_itf_MatMeshMod_0000_0024 */
+/* [local] */ 
+
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0024_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0024_v0_0_s_ifspec;
+
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3130 */
+
+
+
+
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3130 */
+
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3130_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3130_v0_0_s_ifspec;
+
+/* interface __MIDL_itf_MatMeshMod_0000_0025 */
+/* [local] */ 
+
+#ifndef DEF___FIIterator_1_UINT32_USE
+#define DEF___FIIterator_1_UINT32_USE
+#if defined(__cplusplus) && !defined(RO_NO_TEMPLATE_NAME)
+} /*extern "C"*/ 
+namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
+template <>
+struct __declspec(uuid("f06a2739-9443-5ef0-b284-dc5aff3e7d10"))
+IIterator<UINT32> : IIterator_impl<UINT32> {
+static const wchar_t* z_get_rc_name_impl() {
+return L"Windows.Foundation.Collections.IIterator`1<UInt32>"; }
+};
+typedef IIterator<UINT32> __FIIterator_1_UINT32_t;
+#define ____FIIterator_1_UINT32_FWD_DEFINED__
+#define __FIIterator_1_UINT32 ABI::Windows::Foundation::Collections::__FIIterator_1_UINT32_t
+
+/* ABI */ } /* Windows */ } /* Foundation */ } /* Collections */ }
+extern "C" {
+#endif //__cplusplus
+#endif /* DEF___FIIterator_1_UINT32_USE */
+
+
+/* interface __MIDL_itf_MatMeshMod_0000_0025 */
+/* [local] */ 
+
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0025_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0025_v0_0_s_ifspec;
+
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3131 */
+
+
+
+
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3131 */
+
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3131_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3131_v0_0_s_ifspec;
+
+/* interface __MIDL_itf_MatMeshMod_0000_0026 */
+/* [local] */ 
+
+#ifndef DEF___FIIterable_1_UINT32_USE
+#define DEF___FIIterable_1_UINT32_USE
+#if defined(__cplusplus) && !defined(RO_NO_TEMPLATE_NAME)
+} /*extern "C"*/ 
+namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
+template <>
+struct __declspec(uuid("421d4b91-b13b-5f37-ae54-b5249bd80539"))
+IIterable<UINT32> : IIterable_impl<UINT32> {
+static const wchar_t* z_get_rc_name_impl() {
+return L"Windows.Foundation.Collections.IIterable`1<UInt32>"; }
+};
+typedef IIterable<UINT32> __FIIterable_1_UINT32_t;
+#define ____FIIterable_1_UINT32_FWD_DEFINED__
+#define __FIIterable_1_UINT32 ABI::Windows::Foundation::Collections::__FIIterable_1_UINT32_t
+
+/* ABI */ } /* Windows */ } /* Foundation */ } /* Collections */ }
+extern "C" {
+#endif //__cplusplus
+#endif /* DEF___FIIterable_1_UINT32_USE */
+
+
+/* interface __MIDL_itf_MatMeshMod_0000_0026 */
+/* [local] */ 
+
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0026_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0026_v0_0_s_ifspec;
+
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3132 */
+
+
+
+
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3132 */
+
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3132_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3132_v0_0_s_ifspec;
+
+/* interface __MIDL_itf_MatMeshMod_0000_0027 */
 /* [local] */ 
 
 #ifndef DEF___FIVectorView_1_UINT32_USE
@@ -1424,7 +1592,6 @@ class Model;
 } /*MatMeshMod*/
 }
 #endif
-
 #ifdef __cplusplus
 namespace ABI {
 namespace MatMeshMod {
@@ -1441,30 +1608,29 @@ class ModelMaterial;
 #endif
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0024 */
+/* interface __MIDL_itf_MatMeshMod_0000_0027 */
 /* [local] */ 
 
 
 
 
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0027_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0027_v0_0_s_ifspec;
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0024_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0024_v0_0_s_ifspec;
-
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3130 */
-
-
-
-
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3130 */
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3133 */
 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3130_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3130_v0_0_s_ifspec;
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3133 */
 
-/* interface __MIDL_itf_MatMeshMod_0000_0025 */
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3133_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3133_v0_0_s_ifspec;
+
+/* interface __MIDL_itf_MatMeshMod_0000_0028 */
 /* [local] */ 
 
 #ifndef DEF___FIIterator_1_MatMeshMod__CIMesh
@@ -1472,13 +1638,13 @@ extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3130_v0_0_s_ifspec;
 #if !defined(__cplusplus) || defined(RO_NO_TEMPLATE_NAME)
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0025 */
+/* interface __MIDL_itf_MatMeshMod_0000_0028 */
 /* [local] */ 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0025_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0025_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0028_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0028_v0_0_s_ifspec;
 
 #ifndef ____FIIterator_1_MatMeshMod__CIMesh_INTERFACE_DEFINED__
 #define ____FIIterator_1_MatMeshMod__CIMesh_INTERFACE_DEFINED__
@@ -1622,35 +1788,35 @@ EXTERN_C const IID IID___FIIterator_1_MatMeshMod__CIMesh;
 #endif 	/* ____FIIterator_1_MatMeshMod__CIMesh_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0026 */
+/* interface __MIDL_itf_MatMeshMod_0000_0029 */
 /* [local] */ 
 
 #endif /* pinterface */
 #endif /* DEF___FIIterator_1_MatMeshMod__CIMesh */
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0026 */
+/* interface __MIDL_itf_MatMeshMod_0000_0029 */
 /* [local] */ 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0026_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0026_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0029_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0029_v0_0_s_ifspec;
 
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3131 */
-
-
-
-
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3131 */
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3134 */
 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3131_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3131_v0_0_s_ifspec;
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3134 */
 
-/* interface __MIDL_itf_MatMeshMod_0000_0027 */
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3134_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3134_v0_0_s_ifspec;
+
+/* interface __MIDL_itf_MatMeshMod_0000_0030 */
 /* [local] */ 
 
 #ifndef DEF___FIIterable_1_MatMeshMod__CIMesh
@@ -1658,13 +1824,13 @@ extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3131_v0_0_s_ifspec;
 #if !defined(__cplusplus) || defined(RO_NO_TEMPLATE_NAME)
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0027 */
+/* interface __MIDL_itf_MatMeshMod_0000_0030 */
 /* [local] */ 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0027_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0027_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0030_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0030_v0_0_s_ifspec;
 
 #ifndef ____FIIterable_1_MatMeshMod__CIMesh_INTERFACE_DEFINED__
 #define ____FIIterable_1_MatMeshMod__CIMesh_INTERFACE_DEFINED__
@@ -1774,35 +1940,35 @@ EXTERN_C const IID IID___FIIterable_1_MatMeshMod__CIMesh;
 #endif 	/* ____FIIterable_1_MatMeshMod__CIMesh_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0028 */
+/* interface __MIDL_itf_MatMeshMod_0000_0031 */
 /* [local] */ 
 
 #endif /* pinterface */
 #endif /* DEF___FIIterable_1_MatMeshMod__CIMesh */
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0028 */
+/* interface __MIDL_itf_MatMeshMod_0000_0031 */
 /* [local] */ 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0028_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0028_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0031_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0031_v0_0_s_ifspec;
 
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3132 */
-
-
-
-
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3132 */
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3135 */
 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3132_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3132_v0_0_s_ifspec;
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3135 */
 
-/* interface __MIDL_itf_MatMeshMod_0000_0029 */
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3135_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3135_v0_0_s_ifspec;
+
+/* interface __MIDL_itf_MatMeshMod_0000_0032 */
 /* [local] */ 
 
 #ifndef DEF___FIVectorView_1_MatMeshMod__CIMesh
@@ -1810,13 +1976,13 @@ extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3132_v0_0_s_ifspec;
 #if !defined(__cplusplus) || defined(RO_NO_TEMPLATE_NAME)
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0029 */
+/* interface __MIDL_itf_MatMeshMod_0000_0032 */
 /* [local] */ 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0029_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0029_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0032_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0032_v0_0_s_ifspec;
 
 #ifndef ____FIVectorView_1_MatMeshMod__CIMesh_INTERFACE_DEFINED__
 #define ____FIVectorView_1_MatMeshMod__CIMesh_INTERFACE_DEFINED__
@@ -1968,35 +2134,35 @@ EXTERN_C const IID IID___FIVectorView_1_MatMeshMod__CIMesh;
 #endif 	/* ____FIVectorView_1_MatMeshMod__CIMesh_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0030 */
+/* interface __MIDL_itf_MatMeshMod_0000_0033 */
 /* [local] */ 
 
 #endif /* pinterface */
 #endif /* DEF___FIVectorView_1_MatMeshMod__CIMesh */
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0030 */
+/* interface __MIDL_itf_MatMeshMod_0000_0033 */
 /* [local] */ 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0030_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0030_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0033_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0033_v0_0_s_ifspec;
 
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3133 */
-
-
-
-
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3133 */
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3136 */
 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3133_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3133_v0_0_s_ifspec;
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3136 */
 
-/* interface __MIDL_itf_MatMeshMod_0000_0031 */
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3136_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3136_v0_0_s_ifspec;
+
+/* interface __MIDL_itf_MatMeshMod_0000_0034 */
 /* [local] */ 
 
 #ifndef DEF___FIIterator_1_MatMeshMod__CIModelMaterial
@@ -2004,13 +2170,13 @@ extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3133_v0_0_s_ifspec;
 #if !defined(__cplusplus) || defined(RO_NO_TEMPLATE_NAME)
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0031 */
+/* interface __MIDL_itf_MatMeshMod_0000_0034 */
 /* [local] */ 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0031_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0031_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0034_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0034_v0_0_s_ifspec;
 
 #ifndef ____FIIterator_1_MatMeshMod__CIModelMaterial_INTERFACE_DEFINED__
 #define ____FIIterator_1_MatMeshMod__CIModelMaterial_INTERFACE_DEFINED__
@@ -2154,35 +2320,35 @@ EXTERN_C const IID IID___FIIterator_1_MatMeshMod__CIModelMaterial;
 #endif 	/* ____FIIterator_1_MatMeshMod__CIModelMaterial_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0032 */
+/* interface __MIDL_itf_MatMeshMod_0000_0035 */
 /* [local] */ 
 
 #endif /* pinterface */
 #endif /* DEF___FIIterator_1_MatMeshMod__CIModelMaterial */
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0032 */
+/* interface __MIDL_itf_MatMeshMod_0000_0035 */
 /* [local] */ 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0032_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0032_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0035_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0035_v0_0_s_ifspec;
 
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3134 */
-
-
-
-
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3134 */
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3137 */
 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3134_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3134_v0_0_s_ifspec;
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3137 */
 
-/* interface __MIDL_itf_MatMeshMod_0000_0033 */
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3137_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3137_v0_0_s_ifspec;
+
+/* interface __MIDL_itf_MatMeshMod_0000_0036 */
 /* [local] */ 
 
 #ifndef DEF___FIIterable_1_MatMeshMod__CIModelMaterial
@@ -2190,13 +2356,13 @@ extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3134_v0_0_s_ifspec;
 #if !defined(__cplusplus) || defined(RO_NO_TEMPLATE_NAME)
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0033 */
+/* interface __MIDL_itf_MatMeshMod_0000_0036 */
 /* [local] */ 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0033_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0033_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0036_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0036_v0_0_s_ifspec;
 
 #ifndef ____FIIterable_1_MatMeshMod__CIModelMaterial_INTERFACE_DEFINED__
 #define ____FIIterable_1_MatMeshMod__CIModelMaterial_INTERFACE_DEFINED__
@@ -2306,35 +2472,35 @@ EXTERN_C const IID IID___FIIterable_1_MatMeshMod__CIModelMaterial;
 #endif 	/* ____FIIterable_1_MatMeshMod__CIModelMaterial_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0034 */
+/* interface __MIDL_itf_MatMeshMod_0000_0037 */
 /* [local] */ 
 
 #endif /* pinterface */
 #endif /* DEF___FIIterable_1_MatMeshMod__CIModelMaterial */
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0034 */
+/* interface __MIDL_itf_MatMeshMod_0000_0037 */
 /* [local] */ 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0034_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0034_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0037_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0037_v0_0_s_ifspec;
 
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3135 */
-
-
-
-
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3135 */
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3138 */
 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3135_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3135_v0_0_s_ifspec;
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3138 */
 
-/* interface __MIDL_itf_MatMeshMod_0000_0035 */
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3138_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3138_v0_0_s_ifspec;
+
+/* interface __MIDL_itf_MatMeshMod_0000_0038 */
 /* [local] */ 
 
 #ifndef DEF___FIVectorView_1_MatMeshMod__CIModelMaterial
@@ -2342,13 +2508,13 @@ extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3135_v0_0_s_ifspec;
 #if !defined(__cplusplus) || defined(RO_NO_TEMPLATE_NAME)
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0035 */
+/* interface __MIDL_itf_MatMeshMod_0000_0038 */
 /* [local] */ 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0035_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0035_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0038_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0038_v0_0_s_ifspec;
 
 #ifndef ____FIVectorView_1_MatMeshMod__CIModelMaterial_INTERFACE_DEFINED__
 #define ____FIVectorView_1_MatMeshMod__CIModelMaterial_INTERFACE_DEFINED__
@@ -2500,23 +2666,555 @@ EXTERN_C const IID IID___FIVectorView_1_MatMeshMod__CIModelMaterial;
 #endif 	/* ____FIVectorView_1_MatMeshMod__CIModelMaterial_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0036 */
+/* interface __MIDL_itf_MatMeshMod_0000_0039 */
 /* [local] */ 
 
 #endif /* pinterface */
 #endif /* DEF___FIVectorView_1_MatMeshMod__CIModelMaterial */
+
+
+/* interface __MIDL_itf_MatMeshMod_0000_0039 */
+/* [local] */ 
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0039_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0039_v0_0_s_ifspec;
+
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3139 */
+
+
+
+
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3139 */
+
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3139_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3139_v0_0_s_ifspec;
+
+/* interface __MIDL_itf_MatMeshMod_0000_0040 */
+/* [local] */ 
+
+#ifndef DEF___FIIterator_1_MatMeshMod__CIModel
+#define DEF___FIIterator_1_MatMeshMod__CIModel
+#if !defined(__cplusplus) || defined(RO_NO_TEMPLATE_NAME)
+
+
+/* interface __MIDL_itf_MatMeshMod_0000_0040 */
+/* [local] */ 
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0040_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0040_v0_0_s_ifspec;
+
+#ifndef ____FIIterator_1_MatMeshMod__CIModel_INTERFACE_DEFINED__
+#define ____FIIterator_1_MatMeshMod__CIModel_INTERFACE_DEFINED__
+
+/* interface __FIIterator_1_MatMeshMod__CIModel */
+/* [unique][uuid][object] */ 
+
+
+
+/* interface __FIIterator_1_MatMeshMod__CIModel */
+/* [unique][uuid][object] */ 
+
+
+EXTERN_C const IID IID___FIIterator_1_MatMeshMod__CIModel;
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("ef9bf88d-fe54-5374-aea6-5f6c63c56d40")
+    __FIIterator_1_MatMeshMod__CIModel : public IInspectable
+    {
+    public:
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_Current( 
+            /* [retval][out] */ ABI::MatMeshMod::IModel **current) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_HasCurrent( 
+            /* [retval][out] */ boolean *hasCurrent) = 0;
+        
+        virtual HRESULT STDMETHODCALLTYPE MoveNext( 
+            /* [retval][out] */ boolean *hasCurrent) = 0;
+        
+        virtual HRESULT STDMETHODCALLTYPE GetMany( 
+            /* [in] */ unsigned int capacity,
+            /* [size_is][length_is][out] */ ABI::MatMeshMod::IModel **items,
+            /* [retval][out] */ unsigned int *actual) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct __FIIterator_1_MatMeshMod__CIModelVtbl
+    {
+        BEGIN_INTERFACE
+        
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            __FIIterator_1_MatMeshMod__CIModel * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            __FIIterator_1_MatMeshMod__CIModel * This);
+        
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            __FIIterator_1_MatMeshMod__CIModel * This);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetIids )( 
+            __FIIterator_1_MatMeshMod__CIModel * This,
+            /* [out] */ ULONG *iidCount,
+            /* [size_is][size_is][out] */ IID **iids);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )( 
+            __FIIterator_1_MatMeshMod__CIModel * This,
+            /* [out] */ HSTRING *className);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )( 
+            __FIIterator_1_MatMeshMod__CIModel * This,
+            /* [out] */ TrustLevel *trustLevel);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Current )( 
+            __FIIterator_1_MatMeshMod__CIModel * This,
+            /* [retval][out] */ __x_ABI_CMatMeshMod_CIModel **current);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_HasCurrent )( 
+            __FIIterator_1_MatMeshMod__CIModel * This,
+            /* [retval][out] */ boolean *hasCurrent);
+        
+        HRESULT ( STDMETHODCALLTYPE *MoveNext )( 
+            __FIIterator_1_MatMeshMod__CIModel * This,
+            /* [retval][out] */ boolean *hasCurrent);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetMany )( 
+            __FIIterator_1_MatMeshMod__CIModel * This,
+            /* [in] */ unsigned int capacity,
+            /* [size_is][length_is][out] */ __x_ABI_CMatMeshMod_CIModel **items,
+            /* [retval][out] */ unsigned int *actual);
+        
+        END_INTERFACE
+    } __FIIterator_1_MatMeshMod__CIModelVtbl;
+
+    interface __FIIterator_1_MatMeshMod__CIModel
+    {
+        CONST_VTBL struct __FIIterator_1_MatMeshMod__CIModelVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define __FIIterator_1_MatMeshMod__CIModel_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define __FIIterator_1_MatMeshMod__CIModel_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define __FIIterator_1_MatMeshMod__CIModel_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define __FIIterator_1_MatMeshMod__CIModel_GetIids(This,iidCount,iids)	\
+    ( (This)->lpVtbl -> GetIids(This,iidCount,iids) ) 
+
+#define __FIIterator_1_MatMeshMod__CIModel_GetRuntimeClassName(This,className)	\
+    ( (This)->lpVtbl -> GetRuntimeClassName(This,className) ) 
+
+#define __FIIterator_1_MatMeshMod__CIModel_GetTrustLevel(This,trustLevel)	\
+    ( (This)->lpVtbl -> GetTrustLevel(This,trustLevel) ) 
+
+
+#define __FIIterator_1_MatMeshMod__CIModel_get_Current(This,current)	\
+    ( (This)->lpVtbl -> get_Current(This,current) ) 
+
+#define __FIIterator_1_MatMeshMod__CIModel_get_HasCurrent(This,hasCurrent)	\
+    ( (This)->lpVtbl -> get_HasCurrent(This,hasCurrent) ) 
+
+#define __FIIterator_1_MatMeshMod__CIModel_MoveNext(This,hasCurrent)	\
+    ( (This)->lpVtbl -> MoveNext(This,hasCurrent) ) 
+
+#define __FIIterator_1_MatMeshMod__CIModel_GetMany(This,capacity,items,actual)	\
+    ( (This)->lpVtbl -> GetMany(This,capacity,items,actual) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* ____FIIterator_1_MatMeshMod__CIModel_INTERFACE_DEFINED__ */
+
+
+/* interface __MIDL_itf_MatMeshMod_0000_0041 */
+/* [local] */ 
+
+#endif /* pinterface */
+#endif /* DEF___FIIterator_1_MatMeshMod__CIModel */
+
+
+/* interface __MIDL_itf_MatMeshMod_0000_0041 */
+/* [local] */ 
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0041_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0041_v0_0_s_ifspec;
+
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3140 */
+
+
+
+
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3140 */
+
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3140_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3140_v0_0_s_ifspec;
+
+/* interface __MIDL_itf_MatMeshMod_0000_0042 */
+/* [local] */ 
+
+#ifndef DEF___FIIterable_1_MatMeshMod__CIModel
+#define DEF___FIIterable_1_MatMeshMod__CIModel
+#if !defined(__cplusplus) || defined(RO_NO_TEMPLATE_NAME)
+
+
+/* interface __MIDL_itf_MatMeshMod_0000_0042 */
+/* [local] */ 
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0042_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0042_v0_0_s_ifspec;
+
+#ifndef ____FIIterable_1_MatMeshMod__CIModel_INTERFACE_DEFINED__
+#define ____FIIterable_1_MatMeshMod__CIModel_INTERFACE_DEFINED__
+
+/* interface __FIIterable_1_MatMeshMod__CIModel */
+/* [unique][uuid][object] */ 
+
+
+
+/* interface __FIIterable_1_MatMeshMod__CIModel */
+/* [unique][uuid][object] */ 
+
+
+EXTERN_C const IID IID___FIIterable_1_MatMeshMod__CIModel;
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("1a74a1db-a52e-5631-a35b-0ef9d054b592")
+    __FIIterable_1_MatMeshMod__CIModel : public IInspectable
+    {
+    public:
+        virtual HRESULT STDMETHODCALLTYPE First( 
+            /* [retval][out] */ __FIIterator_1_MatMeshMod__CIModel **first) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct __FIIterable_1_MatMeshMod__CIModelVtbl
+    {
+        BEGIN_INTERFACE
+        
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            __FIIterable_1_MatMeshMod__CIModel * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            __FIIterable_1_MatMeshMod__CIModel * This);
+        
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            __FIIterable_1_MatMeshMod__CIModel * This);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetIids )( 
+            __FIIterable_1_MatMeshMod__CIModel * This,
+            /* [out] */ ULONG *iidCount,
+            /* [size_is][size_is][out] */ IID **iids);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )( 
+            __FIIterable_1_MatMeshMod__CIModel * This,
+            /* [out] */ HSTRING *className);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )( 
+            __FIIterable_1_MatMeshMod__CIModel * This,
+            /* [out] */ TrustLevel *trustLevel);
+        
+        HRESULT ( STDMETHODCALLTYPE *First )( 
+            __FIIterable_1_MatMeshMod__CIModel * This,
+            /* [retval][out] */ __FIIterator_1_MatMeshMod__CIModel **first);
+        
+        END_INTERFACE
+    } __FIIterable_1_MatMeshMod__CIModelVtbl;
+
+    interface __FIIterable_1_MatMeshMod__CIModel
+    {
+        CONST_VTBL struct __FIIterable_1_MatMeshMod__CIModelVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define __FIIterable_1_MatMeshMod__CIModel_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define __FIIterable_1_MatMeshMod__CIModel_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define __FIIterable_1_MatMeshMod__CIModel_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define __FIIterable_1_MatMeshMod__CIModel_GetIids(This,iidCount,iids)	\
+    ( (This)->lpVtbl -> GetIids(This,iidCount,iids) ) 
+
+#define __FIIterable_1_MatMeshMod__CIModel_GetRuntimeClassName(This,className)	\
+    ( (This)->lpVtbl -> GetRuntimeClassName(This,className) ) 
+
+#define __FIIterable_1_MatMeshMod__CIModel_GetTrustLevel(This,trustLevel)	\
+    ( (This)->lpVtbl -> GetTrustLevel(This,trustLevel) ) 
+
+
+#define __FIIterable_1_MatMeshMod__CIModel_First(This,first)	\
+    ( (This)->lpVtbl -> First(This,first) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* ____FIIterable_1_MatMeshMod__CIModel_INTERFACE_DEFINED__ */
+
+
+/* interface __MIDL_itf_MatMeshMod_0000_0043 */
+/* [local] */ 
+
+#endif /* pinterface */
+#endif /* DEF___FIIterable_1_MatMeshMod__CIModel */
+
+
+/* interface __MIDL_itf_MatMeshMod_0000_0043 */
+/* [local] */ 
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0043_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0043_v0_0_s_ifspec;
+
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3141 */
+
+
+
+
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3141 */
+
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3141_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3141_v0_0_s_ifspec;
+
+/* interface __MIDL_itf_MatMeshMod_0000_0044 */
+/* [local] */ 
+
+#ifndef DEF___FIVectorView_1_MatMeshMod__CIModel
+#define DEF___FIVectorView_1_MatMeshMod__CIModel
+#if !defined(__cplusplus) || defined(RO_NO_TEMPLATE_NAME)
+
+
+/* interface __MIDL_itf_MatMeshMod_0000_0044 */
+/* [local] */ 
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0044_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0044_v0_0_s_ifspec;
+
+#ifndef ____FIVectorView_1_MatMeshMod__CIModel_INTERFACE_DEFINED__
+#define ____FIVectorView_1_MatMeshMod__CIModel_INTERFACE_DEFINED__
+
+/* interface __FIVectorView_1_MatMeshMod__CIModel */
+/* [unique][uuid][object] */ 
+
+
+
+/* interface __FIVectorView_1_MatMeshMod__CIModel */
+/* [unique][uuid][object] */ 
+
+
+EXTERN_C const IID IID___FIVectorView_1_MatMeshMod__CIModel;
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("a9c28df6-90fb-5dbd-93cd-d7d024bb8f00")
+    __FIVectorView_1_MatMeshMod__CIModel : public IInspectable
+    {
+    public:
+        virtual HRESULT STDMETHODCALLTYPE GetAt( 
+            /* [in] */ unsigned int index,
+            /* [retval][out] */ ABI::MatMeshMod::IModel **item) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_Size( 
+            /* [retval][out] */ unsigned int *size) = 0;
+        
+        virtual HRESULT STDMETHODCALLTYPE IndexOf( 
+            /* [in] */ ABI::MatMeshMod::IModel *item,
+            /* [out] */ unsigned int *index,
+            /* [retval][out] */ boolean *found) = 0;
+        
+        virtual HRESULT STDMETHODCALLTYPE GetMany( 
+            /* [in] */ unsigned int startIndex,
+            /* [in] */ unsigned int capacity,
+            /* [size_is][length_is][out] */ ABI::MatMeshMod::IModel **items,
+            /* [retval][out] */ unsigned int *actual) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct __FIVectorView_1_MatMeshMod__CIModelVtbl
+    {
+        BEGIN_INTERFACE
+        
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            __FIVectorView_1_MatMeshMod__CIModel * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            __FIVectorView_1_MatMeshMod__CIModel * This);
+        
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            __FIVectorView_1_MatMeshMod__CIModel * This);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetIids )( 
+            __FIVectorView_1_MatMeshMod__CIModel * This,
+            /* [out] */ ULONG *iidCount,
+            /* [size_is][size_is][out] */ IID **iids);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )( 
+            __FIVectorView_1_MatMeshMod__CIModel * This,
+            /* [out] */ HSTRING *className);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )( 
+            __FIVectorView_1_MatMeshMod__CIModel * This,
+            /* [out] */ TrustLevel *trustLevel);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetAt )( 
+            __FIVectorView_1_MatMeshMod__CIModel * This,
+            /* [in] */ unsigned int index,
+            /* [retval][out] */ __x_ABI_CMatMeshMod_CIModel **item);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Size )( 
+            __FIVectorView_1_MatMeshMod__CIModel * This,
+            /* [retval][out] */ unsigned int *size);
+        
+        HRESULT ( STDMETHODCALLTYPE *IndexOf )( 
+            __FIVectorView_1_MatMeshMod__CIModel * This,
+            /* [in] */ __x_ABI_CMatMeshMod_CIModel *item,
+            /* [out] */ unsigned int *index,
+            /* [retval][out] */ boolean *found);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetMany )( 
+            __FIVectorView_1_MatMeshMod__CIModel * This,
+            /* [in] */ unsigned int startIndex,
+            /* [in] */ unsigned int capacity,
+            /* [size_is][length_is][out] */ __x_ABI_CMatMeshMod_CIModel **items,
+            /* [retval][out] */ unsigned int *actual);
+        
+        END_INTERFACE
+    } __FIVectorView_1_MatMeshMod__CIModelVtbl;
+
+    interface __FIVectorView_1_MatMeshMod__CIModel
+    {
+        CONST_VTBL struct __FIVectorView_1_MatMeshMod__CIModelVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define __FIVectorView_1_MatMeshMod__CIModel_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define __FIVectorView_1_MatMeshMod__CIModel_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define __FIVectorView_1_MatMeshMod__CIModel_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define __FIVectorView_1_MatMeshMod__CIModel_GetIids(This,iidCount,iids)	\
+    ( (This)->lpVtbl -> GetIids(This,iidCount,iids) ) 
+
+#define __FIVectorView_1_MatMeshMod__CIModel_GetRuntimeClassName(This,className)	\
+    ( (This)->lpVtbl -> GetRuntimeClassName(This,className) ) 
+
+#define __FIVectorView_1_MatMeshMod__CIModel_GetTrustLevel(This,trustLevel)	\
+    ( (This)->lpVtbl -> GetTrustLevel(This,trustLevel) ) 
+
+
+#define __FIVectorView_1_MatMeshMod__CIModel_GetAt(This,index,item)	\
+    ( (This)->lpVtbl -> GetAt(This,index,item) ) 
+
+#define __FIVectorView_1_MatMeshMod__CIModel_get_Size(This,size)	\
+    ( (This)->lpVtbl -> get_Size(This,size) ) 
+
+#define __FIVectorView_1_MatMeshMod__CIModel_IndexOf(This,item,index,found)	\
+    ( (This)->lpVtbl -> IndexOf(This,item,index,found) ) 
+
+#define __FIVectorView_1_MatMeshMod__CIModel_GetMany(This,startIndex,capacity,items,actual)	\
+    ( (This)->lpVtbl -> GetMany(This,startIndex,capacity,items,actual) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* ____FIVectorView_1_MatMeshMod__CIModel_INTERFACE_DEFINED__ */
+
+
+/* interface __MIDL_itf_MatMeshMod_0000_0045 */
+/* [local] */ 
+
+#endif /* pinterface */
+#endif /* DEF___FIVectorView_1_MatMeshMod__CIModel */
 #if !defined(____x_ABI_CMatMeshMod_CIModel_INTERFACE_DEFINED__)
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_MatMeshMod_IModel[] = L"MatMeshMod.IModel";
 #endif /* !defined(____x_ABI_CMatMeshMod_CIModel_INTERFACE_DEFINED__) */
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0036 */
+/* interface __MIDL_itf_MatMeshMod_0000_0045 */
 /* [local] */ 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0036_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0036_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0045_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0045_v0_0_s_ifspec;
 
 #ifndef ____x_ABI_CMatMeshMod_CIModel_INTERFACE_DEFINED__
 #define ____x_ABI_CMatMeshMod_CIModel_INTERFACE_DEFINED__
@@ -2675,7 +3373,7 @@ EXTERN_C const IID IID___x_ABI_CMatMeshMod_CIModel;
 #endif 	/* ____x_ABI_CMatMeshMod_CIModel_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0037 */
+/* interface __MIDL_itf_MatMeshMod_0000_0046 */
 /* [local] */ 
 
 #if !defined(____x_ABI_CMatMeshMod_CIModelFactory_INTERFACE_DEFINED__)
@@ -2683,13 +3381,13 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_MatMesh
 #endif /* !defined(____x_ABI_CMatMeshMod_CIModelFactory_INTERFACE_DEFINED__) */
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0037 */
+/* interface __MIDL_itf_MatMeshMod_0000_0046 */
 /* [local] */ 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0037_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0037_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0046_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0046_v0_0_s_ifspec;
 
 #ifndef ____x_ABI_CMatMeshMod_CIModelFactory_INTERFACE_DEFINED__
 #define ____x_ABI_CMatMeshMod_CIModelFactory_INTERFACE_DEFINED__
@@ -2812,7 +3510,7 @@ EXTERN_C const IID IID___x_ABI_CMatMeshMod_CIModelFactory;
 #endif 	/* ____x_ABI_CMatMeshMod_CIModelFactory_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0038 */
+/* interface __MIDL_itf_MatMeshMod_0000_0047 */
 /* [local] */ 
 
 #if !defined(____x_ABI_CMatMeshMod_CIModelMaterial_INTERFACE_DEFINED__)
@@ -2820,13 +3518,13 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_MatMesh
 #endif /* !defined(____x_ABI_CMatMeshMod_CIModelMaterial_INTERFACE_DEFINED__) */
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0038 */
+/* interface __MIDL_itf_MatMeshMod_0000_0047 */
 /* [local] */ 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0038_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0038_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0047_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0047_v0_0_s_ifspec;
 
 #ifndef ____x_ABI_CMatMeshMod_CIModelMaterial_INTERFACE_DEFINED__
 #define ____x_ABI_CMatMeshMod_CIModelMaterial_INTERFACE_DEFINED__
@@ -2945,7 +3643,7 @@ EXTERN_C const IID IID___x_ABI_CMatMeshMod_CIModelMaterial;
 #endif 	/* ____x_ABI_CMatMeshMod_CIModelMaterial_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0039 */
+/* interface __MIDL_itf_MatMeshMod_0000_0048 */
 /* [local] */ 
 
 #if !defined(____x_ABI_CMatMeshMod_CIModelMaterialFactory_INTERFACE_DEFINED__)
@@ -2953,13 +3651,13 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_MatMesh
 #endif /* !defined(____x_ABI_CMatMeshMod_CIModelMaterialFactory_INTERFACE_DEFINED__) */
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0039 */
+/* interface __MIDL_itf_MatMeshMod_0000_0048 */
 /* [local] */ 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0039_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0039_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0048_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0048_v0_0_s_ifspec;
 
 #ifndef ____x_ABI_CMatMeshMod_CIModelMaterialFactory_INTERFACE_DEFINED__
 #define ____x_ABI_CMatMeshMod_CIModelMaterialFactory_INTERFACE_DEFINED__
@@ -3080,20 +3778,20 @@ EXTERN_C const IID IID___x_ABI_CMatMeshMod_CIModelMaterialFactory;
 #endif 	/* ____x_ABI_CMatMeshMod_CIModelMaterialFactory_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3136 */
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3142 */
 
 
 
 
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3136 */
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3142 */
 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3136_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3136_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3142_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3142_v0_0_s_ifspec;
 
-/* interface __MIDL_itf_MatMeshMod_0000_0041 */
+/* interface __MIDL_itf_MatMeshMod_0000_0050 */
 /* [local] */ 
 
 #ifndef DEF___FIIterator_1_Windows__CFoundation__CNumerics__CVector3
@@ -3101,13 +3799,13 @@ extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3136_v0_0_s_ifspec;
 #if !defined(__cplusplus) || defined(RO_NO_TEMPLATE_NAME)
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0041 */
+/* interface __MIDL_itf_MatMeshMod_0000_0050 */
 /* [local] */ 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0041_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0041_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0050_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0050_v0_0_s_ifspec;
 
 #ifndef ____FIIterator_1_Windows__CFoundation__CNumerics__CVector3_INTERFACE_DEFINED__
 #define ____FIIterator_1_Windows__CFoundation__CNumerics__CVector3_INTERFACE_DEFINED__
@@ -3251,35 +3949,35 @@ EXTERN_C const IID IID___FIIterator_1_Windows__CFoundation__CNumerics__CVector3;
 #endif 	/* ____FIIterator_1_Windows__CFoundation__CNumerics__CVector3_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0042 */
+/* interface __MIDL_itf_MatMeshMod_0000_0051 */
 /* [local] */ 
 
 #endif /* pinterface */
 #endif /* DEF___FIIterator_1_Windows__CFoundation__CNumerics__CVector3 */
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0042 */
+/* interface __MIDL_itf_MatMeshMod_0000_0051 */
 /* [local] */ 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0042_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0042_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0051_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0051_v0_0_s_ifspec;
 
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3137 */
-
-
-
-
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3137 */
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3143 */
 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3137_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3137_v0_0_s_ifspec;
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3143 */
 
-/* interface __MIDL_itf_MatMeshMod_0000_0043 */
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3143_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3143_v0_0_s_ifspec;
+
+/* interface __MIDL_itf_MatMeshMod_0000_0052 */
 /* [local] */ 
 
 #ifndef DEF___FIIterable_1_Windows__CFoundation__CNumerics__CVector3
@@ -3287,13 +3985,13 @@ extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3137_v0_0_s_ifspec;
 #if !defined(__cplusplus) || defined(RO_NO_TEMPLATE_NAME)
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0043 */
+/* interface __MIDL_itf_MatMeshMod_0000_0052 */
 /* [local] */ 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0043_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0043_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0052_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0052_v0_0_s_ifspec;
 
 #ifndef ____FIIterable_1_Windows__CFoundation__CNumerics__CVector3_INTERFACE_DEFINED__
 #define ____FIIterable_1_Windows__CFoundation__CNumerics__CVector3_INTERFACE_DEFINED__
@@ -3403,35 +4101,35 @@ EXTERN_C const IID IID___FIIterable_1_Windows__CFoundation__CNumerics__CVector3;
 #endif 	/* ____FIIterable_1_Windows__CFoundation__CNumerics__CVector3_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0044 */
+/* interface __MIDL_itf_MatMeshMod_0000_0053 */
 /* [local] */ 
 
 #endif /* pinterface */
 #endif /* DEF___FIIterable_1_Windows__CFoundation__CNumerics__CVector3 */
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0044 */
+/* interface __MIDL_itf_MatMeshMod_0000_0053 */
 /* [local] */ 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0044_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0044_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0053_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0053_v0_0_s_ifspec;
 
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3138 */
-
-
-
-
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3138 */
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3144 */
 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3138_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3138_v0_0_s_ifspec;
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3144 */
 
-/* interface __MIDL_itf_MatMeshMod_0000_0045 */
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3144_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3144_v0_0_s_ifspec;
+
+/* interface __MIDL_itf_MatMeshMod_0000_0054 */
 /* [local] */ 
 
 #ifndef DEF___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3
@@ -3439,13 +4137,13 @@ extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3138_v0_0_s_ifspec;
 #if !defined(__cplusplus) || defined(RO_NO_TEMPLATE_NAME)
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0045 */
+/* interface __MIDL_itf_MatMeshMod_0000_0054 */
 /* [local] */ 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0045_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0045_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0054_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0054_v0_0_s_ifspec;
 
 #ifndef ____FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_INTERFACE_DEFINED__
 #define ____FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_INTERFACE_DEFINED__
@@ -3597,35 +4295,35 @@ EXTERN_C const IID IID___FIVectorView_1_Windows__CFoundation__CNumerics__CVector
 #endif 	/* ____FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0046 */
+/* interface __MIDL_itf_MatMeshMod_0000_0055 */
 /* [local] */ 
 
 #endif /* pinterface */
 #endif /* DEF___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3 */
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0046 */
+/* interface __MIDL_itf_MatMeshMod_0000_0055 */
 /* [local] */ 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0046_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0046_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0055_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0055_v0_0_s_ifspec;
 
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3139 */
-
-
-
-
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3139 */
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3145 */
 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3139_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3139_v0_0_s_ifspec;
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3145 */
 
-/* interface __MIDL_itf_MatMeshMod_0000_0047 */
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3145_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3145_v0_0_s_ifspec;
+
+/* interface __MIDL_itf_MatMeshMod_0000_0056 */
 /* [local] */ 
 
 #ifndef DEF___FIIterator_1___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3
@@ -3633,13 +4331,13 @@ extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3139_v0_0_s_ifspec;
 #if !defined(__cplusplus) || defined(RO_NO_TEMPLATE_NAME)
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0047 */
+/* interface __MIDL_itf_MatMeshMod_0000_0056 */
 /* [local] */ 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0047_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0047_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0056_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0056_v0_0_s_ifspec;
 
 #ifndef ____FIIterator_1___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_INTERFACE_DEFINED__
 #define ____FIIterator_1___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_INTERFACE_DEFINED__
@@ -3783,35 +4481,35 @@ EXTERN_C const IID IID___FIIterator_1___FIVectorView_1_Windows__CFoundation__CNu
 #endif 	/* ____FIIterator_1___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0048 */
+/* interface __MIDL_itf_MatMeshMod_0000_0057 */
 /* [local] */ 
 
 #endif /* pinterface */
 #endif /* DEF___FIIterator_1___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3 */
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0048 */
+/* interface __MIDL_itf_MatMeshMod_0000_0057 */
 /* [local] */ 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0048_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0048_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0057_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0057_v0_0_s_ifspec;
 
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3140 */
-
-
-
-
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3140 */
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3146 */
 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3140_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3140_v0_0_s_ifspec;
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3146 */
 
-/* interface __MIDL_itf_MatMeshMod_0000_0049 */
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3146_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3146_v0_0_s_ifspec;
+
+/* interface __MIDL_itf_MatMeshMod_0000_0058 */
 /* [local] */ 
 
 #ifndef DEF___FIIterable_1___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3
@@ -3819,13 +4517,13 @@ extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3140_v0_0_s_ifspec;
 #if !defined(__cplusplus) || defined(RO_NO_TEMPLATE_NAME)
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0049 */
+/* interface __MIDL_itf_MatMeshMod_0000_0058 */
 /* [local] */ 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0049_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0049_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0058_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0058_v0_0_s_ifspec;
 
 #ifndef ____FIIterable_1___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_INTERFACE_DEFINED__
 #define ____FIIterable_1___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_INTERFACE_DEFINED__
@@ -3935,35 +4633,35 @@ EXTERN_C const IID IID___FIIterable_1___FIVectorView_1_Windows__CFoundation__CNu
 #endif 	/* ____FIIterable_1___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0050 */
+/* interface __MIDL_itf_MatMeshMod_0000_0059 */
 /* [local] */ 
 
 #endif /* pinterface */
 #endif /* DEF___FIIterable_1___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3 */
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0050 */
+/* interface __MIDL_itf_MatMeshMod_0000_0059 */
 /* [local] */ 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0050_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0050_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0059_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0059_v0_0_s_ifspec;
 
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3141 */
-
-
-
-
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3141 */
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3147 */
 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3141_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3141_v0_0_s_ifspec;
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3147 */
 
-/* interface __MIDL_itf_MatMeshMod_0000_0051 */
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3147_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3147_v0_0_s_ifspec;
+
+/* interface __MIDL_itf_MatMeshMod_0000_0060 */
 /* [local] */ 
 
 #ifndef DEF___FIVectorView_1___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3
@@ -3971,13 +4669,13 @@ extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3141_v0_0_s_ifspec;
 #if !defined(__cplusplus) || defined(RO_NO_TEMPLATE_NAME)
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0051 */
+/* interface __MIDL_itf_MatMeshMod_0000_0060 */
 /* [local] */ 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0051_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0051_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0060_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0060_v0_0_s_ifspec;
 
 #ifndef ____FIVectorView_1___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_INTERFACE_DEFINED__
 #define ____FIVectorView_1___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_INTERFACE_DEFINED__
@@ -4129,35 +4827,35 @@ EXTERN_C const IID IID___FIVectorView_1___FIVectorView_1_Windows__CFoundation__C
 #endif 	/* ____FIVectorView_1___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0052 */
+/* interface __MIDL_itf_MatMeshMod_0000_0061 */
 /* [local] */ 
 
 #endif /* pinterface */
 #endif /* DEF___FIVectorView_1___FIVectorView_1_Windows__CFoundation__CNumerics__CVector3 */
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0052 */
+/* interface __MIDL_itf_MatMeshMod_0000_0061 */
 /* [local] */ 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0052_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0052_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0061_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0061_v0_0_s_ifspec;
 
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3142 */
-
-
-
-
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3142 */
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3148 */
 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3142_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3142_v0_0_s_ifspec;
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3148 */
 
-/* interface __MIDL_itf_MatMeshMod_0000_0053 */
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3148_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3148_v0_0_s_ifspec;
+
+/* interface __MIDL_itf_MatMeshMod_0000_0062 */
 /* [local] */ 
 
 #ifndef DEF___FIIterator_1_Windows__CFoundation__CNumerics__CQuaternion
@@ -4165,13 +4863,13 @@ extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3142_v0_0_s_ifspec;
 #if !defined(__cplusplus) || defined(RO_NO_TEMPLATE_NAME)
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0053 */
+/* interface __MIDL_itf_MatMeshMod_0000_0062 */
 /* [local] */ 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0053_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0053_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0062_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0062_v0_0_s_ifspec;
 
 #ifndef ____FIIterator_1_Windows__CFoundation__CNumerics__CQuaternion_INTERFACE_DEFINED__
 #define ____FIIterator_1_Windows__CFoundation__CNumerics__CQuaternion_INTERFACE_DEFINED__
@@ -4315,35 +5013,35 @@ EXTERN_C const IID IID___FIIterator_1_Windows__CFoundation__CNumerics__CQuaterni
 #endif 	/* ____FIIterator_1_Windows__CFoundation__CNumerics__CQuaternion_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0054 */
+/* interface __MIDL_itf_MatMeshMod_0000_0063 */
 /* [local] */ 
 
 #endif /* pinterface */
 #endif /* DEF___FIIterator_1_Windows__CFoundation__CNumerics__CQuaternion */
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0054 */
+/* interface __MIDL_itf_MatMeshMod_0000_0063 */
 /* [local] */ 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0054_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0054_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0063_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0063_v0_0_s_ifspec;
 
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3143 */
-
-
-
-
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3143 */
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3149 */
 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3143_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3143_v0_0_s_ifspec;
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3149 */
 
-/* interface __MIDL_itf_MatMeshMod_0000_0055 */
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3149_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3149_v0_0_s_ifspec;
+
+/* interface __MIDL_itf_MatMeshMod_0000_0064 */
 /* [local] */ 
 
 #ifndef DEF___FIIterable_1_Windows__CFoundation__CNumerics__CQuaternion
@@ -4351,13 +5049,13 @@ extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3143_v0_0_s_ifspec;
 #if !defined(__cplusplus) || defined(RO_NO_TEMPLATE_NAME)
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0055 */
+/* interface __MIDL_itf_MatMeshMod_0000_0064 */
 /* [local] */ 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0055_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0055_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0064_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0064_v0_0_s_ifspec;
 
 #ifndef ____FIIterable_1_Windows__CFoundation__CNumerics__CQuaternion_INTERFACE_DEFINED__
 #define ____FIIterable_1_Windows__CFoundation__CNumerics__CQuaternion_INTERFACE_DEFINED__
@@ -4467,35 +5165,35 @@ EXTERN_C const IID IID___FIIterable_1_Windows__CFoundation__CNumerics__CQuaterni
 #endif 	/* ____FIIterable_1_Windows__CFoundation__CNumerics__CQuaternion_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0056 */
+/* interface __MIDL_itf_MatMeshMod_0000_0065 */
 /* [local] */ 
 
 #endif /* pinterface */
 #endif /* DEF___FIIterable_1_Windows__CFoundation__CNumerics__CQuaternion */
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0056 */
+/* interface __MIDL_itf_MatMeshMod_0000_0065 */
 /* [local] */ 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0056_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0056_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0065_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0065_v0_0_s_ifspec;
 
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3144 */
-
-
-
-
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3144 */
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3150 */
 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3144_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3144_v0_0_s_ifspec;
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3150 */
 
-/* interface __MIDL_itf_MatMeshMod_0000_0057 */
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3150_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3150_v0_0_s_ifspec;
+
+/* interface __MIDL_itf_MatMeshMod_0000_0066 */
 /* [local] */ 
 
 #ifndef DEF___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion
@@ -4503,13 +5201,13 @@ extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3144_v0_0_s_ifspec;
 #if !defined(__cplusplus) || defined(RO_NO_TEMPLATE_NAME)
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0057 */
+/* interface __MIDL_itf_MatMeshMod_0000_0066 */
 /* [local] */ 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0057_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0057_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0066_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0066_v0_0_s_ifspec;
 
 #ifndef ____FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_INTERFACE_DEFINED__
 #define ____FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_INTERFACE_DEFINED__
@@ -4661,35 +5359,35 @@ EXTERN_C const IID IID___FIVectorView_1_Windows__CFoundation__CNumerics__CQuater
 #endif 	/* ____FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0058 */
+/* interface __MIDL_itf_MatMeshMod_0000_0067 */
 /* [local] */ 
 
 #endif /* pinterface */
 #endif /* DEF___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion */
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0058 */
+/* interface __MIDL_itf_MatMeshMod_0000_0067 */
 /* [local] */ 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0058_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0058_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0067_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0067_v0_0_s_ifspec;
 
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3145 */
-
-
-
-
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3145 */
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3151 */
 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3145_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3145_v0_0_s_ifspec;
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3151 */
 
-/* interface __MIDL_itf_MatMeshMod_0000_0059 */
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3151_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3151_v0_0_s_ifspec;
+
+/* interface __MIDL_itf_MatMeshMod_0000_0068 */
 /* [local] */ 
 
 #ifndef DEF___FIIterator_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion
@@ -4697,13 +5395,13 @@ extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3145_v0_0_s_ifspec;
 #if !defined(__cplusplus) || defined(RO_NO_TEMPLATE_NAME)
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0059 */
+/* interface __MIDL_itf_MatMeshMod_0000_0068 */
 /* [local] */ 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0059_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0059_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0068_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0068_v0_0_s_ifspec;
 
 #ifndef ____FIIterator_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_INTERFACE_DEFINED__
 #define ____FIIterator_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_INTERFACE_DEFINED__
@@ -4847,35 +5545,35 @@ EXTERN_C const IID IID___FIIterator_1___FIVectorView_1_Windows__CFoundation__CNu
 #endif 	/* ____FIIterator_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0060 */
+/* interface __MIDL_itf_MatMeshMod_0000_0069 */
 /* [local] */ 
 
 #endif /* pinterface */
 #endif /* DEF___FIIterator_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion */
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0060 */
+/* interface __MIDL_itf_MatMeshMod_0000_0069 */
 /* [local] */ 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0060_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0060_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0069_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0069_v0_0_s_ifspec;
 
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3146 */
-
-
-
-
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3146 */
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3152 */
 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3146_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3146_v0_0_s_ifspec;
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3152 */
 
-/* interface __MIDL_itf_MatMeshMod_0000_0061 */
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3152_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3152_v0_0_s_ifspec;
+
+/* interface __MIDL_itf_MatMeshMod_0000_0070 */
 /* [local] */ 
 
 #ifndef DEF___FIIterable_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion
@@ -4883,13 +5581,13 @@ extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3146_v0_0_s_ifspec;
 #if !defined(__cplusplus) || defined(RO_NO_TEMPLATE_NAME)
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0061 */
+/* interface __MIDL_itf_MatMeshMod_0000_0070 */
 /* [local] */ 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0061_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0061_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0070_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0070_v0_0_s_ifspec;
 
 #ifndef ____FIIterable_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_INTERFACE_DEFINED__
 #define ____FIIterable_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_INTERFACE_DEFINED__
@@ -4999,35 +5697,35 @@ EXTERN_C const IID IID___FIIterable_1___FIVectorView_1_Windows__CFoundation__CNu
 #endif 	/* ____FIIterable_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0062 */
+/* interface __MIDL_itf_MatMeshMod_0000_0071 */
 /* [local] */ 
 
 #endif /* pinterface */
 #endif /* DEF___FIIterable_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion */
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0062 */
+/* interface __MIDL_itf_MatMeshMod_0000_0071 */
 /* [local] */ 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0062_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0062_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0071_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0071_v0_0_s_ifspec;
 
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3147 */
-
-
-
-
-/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3147 */
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3153 */
 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3147_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3147_v0_0_s_ifspec;
+/* interface __MIDL_itf_MatMeshMod2Eidl_0000_3153 */
 
-/* interface __MIDL_itf_MatMeshMod_0000_0063 */
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3153_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3153_v0_0_s_ifspec;
+
+/* interface __MIDL_itf_MatMeshMod_0000_0072 */
 /* [local] */ 
 
 #ifndef DEF___FIVectorView_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion
@@ -5035,13 +5733,13 @@ extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod2Eidl_0000_3147_v0_0_s_ifspec;
 #if !defined(__cplusplus) || defined(RO_NO_TEMPLATE_NAME)
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0063 */
+/* interface __MIDL_itf_MatMeshMod_0000_0072 */
 /* [local] */ 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0063_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0063_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0072_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0072_v0_0_s_ifspec;
 
 #ifndef ____FIVectorView_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_INTERFACE_DEFINED__
 #define ____FIVectorView_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_INTERFACE_DEFINED__
@@ -5193,7 +5891,7 @@ EXTERN_C const IID IID___FIVectorView_1___FIVectorView_1_Windows__CFoundation__C
 #endif 	/* ____FIVectorView_1___FIVectorView_1_Windows__CFoundation__CNumerics__CQuaternion_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0064 */
+/* interface __MIDL_itf_MatMeshMod_0000_0073 */
 /* [local] */ 
 
 #endif /* pinterface */
@@ -5203,13 +5901,13 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_MatMesh
 #endif /* !defined(____x_ABI_CMatMeshMod_CIMesh_INTERFACE_DEFINED__) */
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0064 */
+/* interface __MIDL_itf_MatMeshMod_0000_0073 */
 /* [local] */ 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0064_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0064_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0073_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0073_v0_0_s_ifspec;
 
 #ifndef ____x_ABI_CMatMeshMod_CIMesh_INTERFACE_DEFINED__
 #define ____x_ABI_CMatMeshMod_CIMesh_INTERFACE_DEFINED__
@@ -5478,7 +6176,7 @@ EXTERN_C const IID IID___x_ABI_CMatMeshMod_CIMesh;
 #endif 	/* ____x_ABI_CMatMeshMod_CIMesh_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0065 */
+/* interface __MIDL_itf_MatMeshMod_0000_0074 */
 /* [local] */ 
 
 #ifndef RUNTIMECLASS_MatMeshMod_Model_DEFINED
@@ -5495,13 +6193,13 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_MatMeshM
 #endif
 
 
-/* interface __MIDL_itf_MatMeshMod_0000_0065 */
+/* interface __MIDL_itf_MatMeshMod_0000_0074 */
 /* [local] */ 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0065_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0065_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0074_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_MatMeshMod_0000_0074_v0_0_s_ifspec;
 
 /* Additional Prototypes for ALL interfaces */
 
